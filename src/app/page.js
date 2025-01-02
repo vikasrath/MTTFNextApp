@@ -1,101 +1,45 @@
-import Image from "next/image";
+import React from 'react'
+import ServiceSection from '@/components/ServiceSection/ServiceSection'
+import Body from '@/components/Body/Body'
+import OurVisionMission from '@/components/OurVisionMision/OurVisionMision'
+import Partners from '@/components/Partners/Parteners'
+import Cordinator from '@/components/Cordinator/Cordinator'
+import ContactUs from '@/components/ContactUs/ContactUs'
+import hdimg from "../../public/assets/headerimg.webp"
+import HeaderContainer from '@/components/HeaderContainer/HeaderContainer'
+import Header from '@/AllPagesHeaders/CommenHeader/Header'
 
-export default function Home() {
+
+function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+     <HeaderContainer>
+                
+                <Header
+                    imgsrc={hdimg}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+                    title="Our Visionary Leaders"
+                    description="Meet the dedicated leaders of the MathTech Thinking Foundation (MTTF), whose passion, expertise, and commitment drive our mission forward. Our team of esteemed scholars, educators, and industry professionals brings together a wealth of knowledge and experience to inspire innovative solutions and educational advancements. Through their guidance, MTTF continues to empower individuals, foster academic growth, and promote technological excellence. Discover the visionaries who shape our foundation and contribute to a brighter, more inclusive future in mathematics and technology"
+                />
+            </HeaderContainer>
+      <Body />
+      <ServiceSection />
+
+      <OurVisionMission
+        image="https://wallpaperaccess.com/full/4773993.jpg"
+        heading1="What is our Vision?"
+        description1=" MTTF aims to create a welcoming and supportive environment for STEM professionals, fostering research, innovation, communication, and collaborations that have the potential to be sustainable and globally shareable in the long term."
+        heading2="Our Mission"
+        description2=" We strive to create an environment where innovation and research thrive, producing leaders for tomorrow. By collaborating with organizations globally, transforming education through practical learning, and addressing worldwide challenges, we aim to nurture talent that can secure a better future. Our mission is to promote excellence in mathematics and computational thinking, recognize young researchers, and contribute to societal outreach through relevant workshops and events."
+
+      />
+      <Partners />
+      <Cordinator />
+      <ContactUs />
+
+
+    </>
+  )
 }
+
+export default Home
