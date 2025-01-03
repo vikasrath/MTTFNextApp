@@ -6,14 +6,14 @@ import React from 'react';
 function About() {
   return (
     <>
-      <HeaderContainer>
+    
         
         <Header
           imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
           title="WE ARE MTTF"
           description="The MathTech Thinking Foundation (MTTF) is registered under Section 8 of the Companies Act 2013, Ministry of Corporate Affairs, Government of India."
         />
-      </HeaderContainer>
+      
       
       <section className="bg-gray-100">
         <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">

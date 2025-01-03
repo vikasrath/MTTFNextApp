@@ -26,14 +26,14 @@ function StudentChepter() {
   return (
     <>
       
-      <HeaderContainer>
+    
       <Header
           imgsrc={student}
 
           title={<p className=' text-[40px] md:text-[50px] '>Why The Student Chapter ?</p>}
           description="Student chapters for STEM professionals are established to provide a platform for students in science, technology, engineering, and mathematics (STEM) fields. These chapters aim to foster a sense of community, networking opportunities, and educational support for students pursuing careers in STEM disciplines. They often offer a range of activities, events, and resources to enhance the academic and professional development of students interested in STEM professions."
         />
-      </HeaderContainer>
+
         
 
 

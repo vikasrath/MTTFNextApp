@@ -24,7 +24,7 @@ function AboutChepter() {
 
   return (
     <>
-      <HeaderContainer>
+      
         <Header
           imgsrc={studentChapter}
 
@@ -33,7 +33,7 @@ function AboutChepter() {
 
 "
         />
-      </HeaderContainer>
+      
 
       <section className="bg-gray-100 py-10 px-5 md:px-20 lg:px-40">
         <div className="max-w-4xl mx-auto text-center">

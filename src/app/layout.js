@@ -18,8 +18,10 @@ export default function RootLayout({ children }) {
         className={` antialiased`}
       >
        <Navbar/>
-      <HeaderContainer/>
-        {children}
+       
+       
+       {children}
+     
         <Footer/>
       </body>
     </html>

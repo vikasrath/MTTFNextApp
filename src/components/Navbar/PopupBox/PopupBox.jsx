@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function PopupBox({ linkBox, closeIcon }) {
     return (
-        <div className="absolute w-full h-screen top-24 shadow-lg border-t-2 border-white">
+        <div className="absolute w-full h-screen top-24 shadow-lg border-t-2 border-white z-10">
             <div className="bg-gradient-to-r px-4 lg:px-24 from-[#252a3d] to-[#3f4957] w-full h-full relative">
                 
                 <button

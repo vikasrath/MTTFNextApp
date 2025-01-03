@@ -7,7 +7,7 @@ import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
 function InstitutionalMembership() {
     return (
         <>
-            <HeaderContainer>
+          
                 <Header
                     imgsrc={membership}
 
@@ -15,7 +15,7 @@ function InstitutionalMembership() {
 
                     description={<p className='text-3xl'>MathTech Thinking Foundation (MTTF) Institutional Membership</p>}
                 />
-            </HeaderContainer>
+            
 
             <section className="max-w-6xl mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">Institutional Membership with MTTF</h2>

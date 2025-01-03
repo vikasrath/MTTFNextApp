@@ -8,16 +8,16 @@ const DataAndAiPage = () => {
     return (
 
         <>
-            <HeaderContainer>
+            
                 <Header
                     imgsrc={
                         dataAiimg
                     }
                     title="Unlocking the Power of Data and Artificial Intelligence"
-                    description="Data and Artificial Intelligence (AI) are transforming the way we understand and interact with the world. With AI's ability to analyze massive datasets, automate tasks, and mimic human decision-making, it is revolutionizing industries like healthcare, finance, transportation, and entertainment. Our platform offers cutting-edge knowledge and practical skills to help you master AI, from machine learning and deep learning to natural language processing. Join us and explore the limitless potential of data-driven innovations and career opportunities in the rapidly evolving field of AI and data science."
+                    description="Data and AI are transforming industries by analyzing massive datasets, automating tasks, and mimicking human decision-making. Our platform equips you with practical skills in AI, from machine learning to NLP, unlocking career opportunities in this rapidly evolving field."
 
                 />
-            </HeaderContainer>
+           
             <div className="bg-gray-50 text-gray-800 p-6 md:p-12">
                 {/* Header Section */}
                 <section className="text-center mb-16">

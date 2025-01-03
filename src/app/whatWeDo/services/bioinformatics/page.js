@@ -7,16 +7,17 @@ import bioimg from "../../../../../public/assets/Bioinformatics.png"
 function BioinformaticsPage() {
     return (
         <>
-            <HeaderContainer>
+            
                 <Header
                     imgsrc={
                         bioimg
                     }
                     title="Exploring the Future of Bioinformatics"
-                    description="Bioinformatics merges biology, computer science, and data analytics to decode the secrets of life. It plays a pivotal role in genomics, proteomics, drug discovery, and personalized medicine. Our platform is dedicated to empowering learners with cutting-edge knowledge and skills in bioinformatics, bridging the gap between biology and technology, and opening doors to innovative research and career opportunities in the rapidly evolving world of life sciences."
+
+                    description="Unlock the potential of bioinformatics: Learn to analyze biological data and drive innovations in genomics, healthcare, and research."
 
                 />
-            </HeaderContainer>
+            
             
             <div className="bg-gradient-to-b from-blue-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 text-gray-800 dark:text-gray-100 min-h-screen py-12">
                 <div className="max-w-7xl mx-auto px-6">

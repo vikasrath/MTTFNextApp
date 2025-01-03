@@ -13,16 +13,16 @@ import Header from '@/AllPagesHeaders/CommenHeader/Header'
 function Home() {
   return (
     <>
-     <HeaderContainer>
-                
-                <Header
-                    imgsrc={hdimg}
+      
 
-                    title="Our Visionary Leaders"
-                    description="Meet the dedicated leaders of the MathTech Thinking Foundation (MTTF), whose passion, expertise, and commitment drive our mission forward. Our team of esteemed scholars, educators, and industry professionals brings together a wealth of knowledge and experience to inspire innovative solutions and educational advancements. Through their guidance, MTTF continues to empower individuals, foster academic growth, and promote technological excellence. Discover the visionaries who shape our foundation and contribute to a brighter, more inclusive future in mathematics and technology"
-                />
-            </HeaderContainer>
-      <Body />
+        <Header
+          imgsrc={hdimg}
+
+          title="Our Visionary Leaders"
+          description="Meet the dedicated leaders of the MathTech Thinking Foundation (MTTF), whose passion, expertise, and commitment drive our mission forward. Our team of esteemed scholars, educators, and industry professionals brings together a wealth of knowledge and experience to inspire innovative solutions and educational advancements. Through their guidance, MTTF continues to empower individuals, foster academic growth, and promote technological excellence. Discover the visionaries who shape our foundation and contribute to a brighter, more inclusive future in mathematics and technology"
+        />
+      
+      
       <ServiceSection />
 
       <OurVisionMission

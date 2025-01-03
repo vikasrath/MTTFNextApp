@@ -21,13 +21,13 @@ function DataAnalyticsConsultancy() {
 
     return (
         <>
-            <HeaderContainer>
+            
             <Header
                 imgsrc={dataanalysis}
                 title="Data Analytics Consultancy Services"
                 description="Empowering businesses to unlock their full potential with data-driven strategies, analysis, and insights."
             />
-            </HeaderContainer>
+            
             <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
                     <div className="text-left">
