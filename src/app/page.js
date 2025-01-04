@@ -1,13 +1,10 @@
 import React from 'react'
 import ServiceSection from '@/components/ServiceSection/ServiceSection'
-import Body from '@/components/Body/Body'
 import OurVisionMission from '@/components/OurVisionMision/OurVisionMision'
 import Partners from '@/components/Partners/Parteners'
 import Cordinator from '@/components/Cordinator/Cordinator'
 import ContactUs from '@/components/ContactUs/ContactUs'
-import hdimg from "../../public/assets/headerimg.webp"
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer'
-import Header from '@/AllPagesHeaders/CommenHeader/Header'
+import Header from '@/components/Header/Header'
 
 
 function Home() {

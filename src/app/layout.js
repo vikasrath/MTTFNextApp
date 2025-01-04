@@ -1,10 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/AllPagesHeaders/CommenHeader/Header";
-import HomeHeader from "@/AllPagesHeaders/HomeHeader";
-import Body from "@/components/Body/Body";
-import HeaderContainer from "@/components/HeaderContainer/HeaderContainer";
 
 export const metadata = {
   title: "Create Next App",

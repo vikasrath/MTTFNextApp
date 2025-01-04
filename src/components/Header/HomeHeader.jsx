@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import { headingAnimation } from "../GsapAnimation/Gsap";
-import introVideo from "../../public/assets/introMTTF.mp4";
+import { headingAnimation } from "../../GsapAnimation/Gsap";
+import introVideo from "../../../public/assets/introMTTF.mp4";
 import Link from "next/link";
 
 function HomeHeader() {
@@ -34,8 +34,8 @@ function HomeHeader() {
 
   return (
     <>
-      <div className="relative h-auto md:h-[1050px]">
-        <div className="flex bg-gradient-to-r pt-20 from-[#283853] to-gray-900 flex-col items-center h-auto md:h-[60%] text-[#FFFFFF]">
+      <div className="  md:relative h-[400px] md:h-[700px] lg:h-[1050px] bg-gradient-to-r from-[#283853] to-gray-900 md:bg-none  ">
+        <div className="flex bg-gradient-to-r pt-20 from-[#283853] to-gray-900 flex-col items-center h-[100%]  md:h-[70%] lg:h-[60%] text-[#FFFFFF]">
           <h1
             ref={headingRef}
             className="text-2xl md:text-[3.9rem] font-medium leading-tight text-center"
@@ -51,7 +51,7 @@ function HomeHeader() {
             </button>
           </Link>
 
-          <div className="absolute top-[45%] md:top-[35%] w-full px-4 md:px-0">
+          <div className="absolute  bottom-[12%]   md:top-[50%] lg:top-[35%] w-full px-4 md:px-0">
             <div className="relative flex justify-center">
               {/* Video Element */}
               <video

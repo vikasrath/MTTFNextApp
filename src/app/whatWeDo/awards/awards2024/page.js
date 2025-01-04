@@ -7,9 +7,7 @@ import img2 from '../../../../../public/assets/2024IEARG/IMG2.jpg';
 import img3 from '../../../../../public/assets/2024IEARG/IMG3.jpg';
 import img4 from '../../../../../public/assets/2024IEARG/IMG4.jpg';
 import img5 from '../../../../../public/assets/2024IEARG/IMG5.jpg';
-import Body from '@/components/Body/Body';
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
+import Header from '@/components/Header/Header';
 
 function Award2024() {
   return (

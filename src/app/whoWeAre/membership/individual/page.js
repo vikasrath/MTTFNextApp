@@ -1,9 +1,8 @@
 import React from 'react'
 import membership from '../../../../../public/assets/membership.png'
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
+import Header from '@/components/Header/Header';
 import FAQ from '@/components/FAQ/FAQ';
 import List from '@/components/List/List';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
 
 
 function IndividualMembership() {

@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from "@/AllPagesHeaders/CommenHeader/Header";
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
+import Header from "@/components/Header/Header";
 import dataanalysis from "../../../../../public/assets/data-science-image (1).png"
 import dataanalysis2 from "../../../../../public/assets/dataanalysis2.png"
 import Image from 'next/image';

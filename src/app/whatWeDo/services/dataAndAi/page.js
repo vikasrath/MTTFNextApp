@@ -1,7 +1,5 @@
 import React from 'react';
-import Body from "@/components/Body/Body";
-import Header from "@/AllPagesHeaders/CommenHeader/Header";
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
+import Header from "@/components/Header/Header";
 import dataAiimg from "../../../../../public/assets/data-science-image (1).png"
 
 const DataAndAiPage = () => {

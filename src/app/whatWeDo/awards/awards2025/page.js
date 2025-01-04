@@ -1,11 +1,9 @@
 "use client"
 
 import React from 'react'
-import Body from '@/components/Body/Body';
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
 import { useState } from 'react';
 import awardTop from '../../../../../public/assets/2024awards/awardTop.png';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
+import Header from '@/components/Header/Header';
 
 
 function Award2025() {
@@ -60,6 +58,7 @@ function Award2025() {
                     title="IEARG Award 2025"
                     description="The Awards 2025 will be held on National Science Day, observed every year on 28 February to commemorate the discovery of the Raman effect by the esteemed Indian physicist Sir C. V. Raman on 28 February 1928. This event, in partnership with Sharda University, India, honors remarkable achievements in a variety of fields, with a total prize fund of 500,000 INR awarded across several categories."
                 />
+                
            
 
             <section className="py-8 ">

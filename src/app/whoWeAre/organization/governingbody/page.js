@@ -11,10 +11,9 @@ import bharti from "../../../../../public/assets/GovermentBodyImage/bharti.png";
 import biswaranjan from "../../../../../public/assets/GovermentBodyImage/biswaranjan.jpg";
 import jatin from "../../../../../public/assets/GovermentBodyImage/jatin.jpeg";
 import daljeet from "../../../../../public/assets/GovermentBodyImage/daljeet.jpg";
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
+import Header from '@/components/Header/Header';
 import GoverningBodyCard from '@/components/GoverningBodyCard/GoverningBodyCard';
 import AdvisoryCommittee from '../advisoryCommittee/page';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
 import hdimg from "../../../../../public/assets/headerimg.webp"
 
 function GoverningBody() {

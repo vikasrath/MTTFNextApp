@@ -1,11 +1,8 @@
 
 import React from 'react'
-import Body from '@/components/Body/Body';
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
+import Header from '@/components/Header/Header';
 import student from "../../../../../public/assets/student.png"
-
 import List from '@/components/List/List';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
 
 function StudentChepter() {
 

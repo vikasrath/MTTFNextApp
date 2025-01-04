@@ -1,7 +1,5 @@
 import React from "react";
-import Body from "@/components/Body/Body";
-import Header from "@/AllPagesHeaders/CommenHeader/Header";
-import HeaderContainer from "@/components/HeaderContainer/HeaderContainer";
+import Header from "@/components/Header/Header";
 import bioimg from "../../../../../public/assets/Bioinformatics.png"
 
 function BioinformaticsPage() {

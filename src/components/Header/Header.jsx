@@ -1,17 +1,11 @@
 "use client"
-import React, { useRef, useState, useEffect } from 'react';
-import { headingAnimation } from '../../GsapAnimation/Gsap';
-import introVideo from "../../../public/assets/introMTTF.mp4";
-import Link from 'next/link';
-import HomeHeader from '../HomeHeader';
+import React from 'react';
+import HomeHeader from './HomeHeader';
 function Header({ title, description, button, buttonLink, isHome = false }) {
-
-
 
     return (
 
         <>
-
             {isHome ?
                 (
 

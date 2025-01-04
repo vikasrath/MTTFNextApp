@@ -1,9 +1,7 @@
 import React from 'react';
 import studentChapter from "../../../../../public/assets/studentChapter.png"
-import Header from '@/AllPagesHeaders/CommenHeader/Header';
+import Header from '@/components/Header/Header';
 import List from '@/components/List/List';
-import HeaderContainer from '@/components/HeaderContainer/HeaderContainer';
-import Image from 'next/image';
 
 function AboutChepter() {
 
