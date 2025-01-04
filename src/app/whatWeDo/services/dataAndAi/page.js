@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "@/components/Header/Header";
-import dataAiimg from "../../../../../public/assets/data-science-image (1).png"
 
 const DataAndAiPage = () => {
     return (
@@ -8,9 +7,6 @@ const DataAndAiPage = () => {
         <>
             
                 <Header
-                    imgsrc={
-                        dataAiimg
-                    }
                     title="Unlocking the Power of Data and Artificial Intelligence"
                     description="Data and AI are transforming industries by analyzing massive datasets, automating tasks, and mimicking human decision-making. Our platform equips you with practical skills in AI, from machine learning to NLP, unlocking career opportunities in this rapidly evolving field."
 

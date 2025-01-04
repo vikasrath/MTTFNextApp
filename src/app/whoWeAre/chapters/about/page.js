@@ -1,5 +1,4 @@
 import React from 'react';
-import studentChapter from "../../../../../public/assets/studentChapter.png"
 import Header from '@/components/Header/Header';
 import List from '@/components/List/List';
 
@@ -24,8 +23,6 @@ function AboutChepter() {
     <>
       
         <Header
-          imgsrc={studentChapter}
-
           title="Student Chapters"
           description="Students pursuing their graduate and post graduate in Science, Technology, Engineering, & Mathematics can apply for MTTF student membership. MTTF encourages and supports students by appointing its members to provide necessary guidance to build and globalize their innovative ideas.
 

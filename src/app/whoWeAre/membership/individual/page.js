@@ -1,5 +1,4 @@
 import React from 'react'
-import membership from '../../../../../public/assets/membership.png'
 import Header from '@/components/Header/Header';
 import FAQ from '@/components/FAQ/FAQ';
 import List from '@/components/List/List';
@@ -47,8 +46,6 @@ function IndividualMembership() {
         <>
 
                 <Header
-                    imgsrc={membership}
-
                     title="Become a Member"
                     description="The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. An invoice link will be sent after registration."
 

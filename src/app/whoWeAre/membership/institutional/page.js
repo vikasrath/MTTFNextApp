@@ -1,14 +1,12 @@
 import React from 'react'
 import Header from '@/components/Header/Header';
-import membership from '../../../../../public/assets/membership.png'
 
 function InstitutionalMembership() {
     return (
         <>
           
                 <Header
-                    imgsrc={membership}
-
+                  
                     title={<p className='text-[50px]'>Institutional Membership</p>}
 
                     description={<p className='text-3xl'>MathTech Thinking Foundation (MTTF) Institutional Membership</p>}

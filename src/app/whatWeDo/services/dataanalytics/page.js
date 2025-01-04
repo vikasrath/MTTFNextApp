@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "@/components/Header/Header";
-import dataanalysis from "../../../../../public/assets/data-science-image (1).png"
 import dataanalysis2 from "../../../../../public/assets/dataanalysis2.png"
 import Image from 'next/image';
 
@@ -22,7 +21,6 @@ function DataAnalyticsConsultancy() {
         <>
             
             <Header
-                imgsrc={dataanalysis}
                 title="Data Analytics Consultancy Services"
                 description="Empowering businesses to unlock their full potential with data-driven strategies, analysis, and insights."
             />

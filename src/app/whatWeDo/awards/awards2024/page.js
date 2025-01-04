@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import award2024 from '../../../../../public/assets/2024awards/EARG2024.jpg';
-import awardTop from '../../../../../public/assets/2024awards/awardTop.png';
 import img1 from '../../../../../public/assets/2024IEARG/IMG1.jpg';
 import img2 from '../../../../../public/assets/2024IEARG/IMG2.jpg';
 import img3 from '../../../../../public/assets/2024IEARG/IMG3.jpg';
@@ -14,7 +13,6 @@ function Award2024() {
     <>
       
         <Header
-          imgsrc={awardTop}
           title="IEARG Award 2024"
           description="The International EARG Awards 2024, organized by MTTF in association with Poornima Engineering College, Jaipur, took place on March 19, 2024, in Fazilka, India. Awards were presented across nine categories, including Lifetime Achievement in Academia and Research, Excellence in Academic Leadership, Research and Development, International Achievements, Innovation through Collaboration, Outstanding Faculty, Young Researcher, Young Entrepreneur, and Innovative Startup of the Year."
         />

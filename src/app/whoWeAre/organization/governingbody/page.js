@@ -14,7 +14,6 @@ import daljeet from "../../../../../public/assets/GovermentBodyImage/daljeet.jpg
 import Header from '@/components/Header/Header';
 import GoverningBodyCard from '@/components/GoverningBodyCard/GoverningBodyCard';
 import AdvisoryCommittee from '../advisoryCommittee/page';
-import hdimg from "../../../../../public/assets/headerimg.webp"
 
 function GoverningBody() {
     const governingBody = [
@@ -37,8 +36,6 @@ function GoverningBody() {
            
                 
                 <Header
-                    imgsrc={hdimg}
-
                     title="Our Visionary Leaders"
                     description="Meet the visionary leaders of the MathTech Thinking Foundation (MTTF), whose expertise and dedication drive innovation and educational excellence. Their guidance empowers individuals, fosters academic growth, and promotes a brighter future in mathematics and technology."
                 />

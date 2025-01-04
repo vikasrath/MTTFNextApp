@@ -1,15 +1,11 @@
 import React from "react";
 import Header from "@/components/Header/Header";
-import bioimg from "../../../../../public/assets/Bioinformatics.png"
 
 function BioinformaticsPage() {
     return (
         <>
             
                 <Header
-                    imgsrc={
-                        bioimg
-                    }
                     title="Exploring the Future of Bioinformatics"
 
                     description="Unlock the potential of bioinformatics: Learn to analyze biological data and drive innovations in genomics, healthcare, and research."

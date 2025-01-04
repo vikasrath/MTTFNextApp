@@ -1,7 +1,6 @@
 
 import React from 'react'
 import Header from '@/components/Header/Header';
-import student from "../../../../../public/assets/student.png"
 import List from '@/components/List/List';
 
 function StudentChepter() {
@@ -25,8 +24,6 @@ function StudentChepter() {
       
     
       <Header
-          imgsrc={student}
-
           title={<p className=' text-[40px] md:text-[50px] '>Why The Student Chapter ?</p>}
           description="Student chapters for STEM professionals create a supportive community, offering networking, educational events, and resources to enhance students' academic and career growth in STEM fields."
         />
