@@ -1,11 +1,10 @@
 'use client';
-
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Logo from '../Logo/Logo';
-import SideBar from './SideBar';
 import PopupBox from './PopupBox/PopupBox';
 import navItems from '../../../public/assets/navitems';
+import SideBar from './sidebar';
 
 const Navbar = () => {
     const [togled, setTogled] = useState(false);
@@ -29,6 +28,7 @@ const Navbar = () => {
 
     return (
         <>
+        
             <SideBar togled={togled} setTogled={setTogled} navItems={navItems} />
             <nav className="bg-gradient-to-r from-[#283853] to-gray-900 flex justify-center items-center w-full z-30 text-m xl:text-xl">
                 <div
