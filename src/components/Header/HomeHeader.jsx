@@ -45,11 +45,11 @@ function HomeHeader() {
           Welcome To Math Tech Thiinking Foundation
         </h1>
         <a href=""
-          className=" mt-12 border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
+          className=" mt-8 border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
           Forget about spending hundreds $
         </a>
 
-        <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
+        <h2 className="mx-auto mt-6 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
           International association for Science, Technology, Engineering, and Mathematics professor
         </h2>
 
