@@ -5,6 +5,8 @@ import Logo from '../Logo/Logo';
 import PopupBox from './PopupBox/PopupBox';
 import navItems from '../../../public/assets/navitems';
 import SideBar from './sidebar';
+import { FaBars } from 'react-icons/fa';
+
 
 const Navbar = () => {
     const [togled, setTogled] = useState(false);
@@ -71,10 +73,8 @@ const Navbar = () => {
 
                     <div className="lg:hidden text-right py-1 navmenubar items-center justify-center">
                         <button onClick={handelClick} className="text-white">
-                            <i
-                                className="fa-solid fa-bars w-10 h-8 mt-1"
-                                style={{ fontSize: '1.5rem' }}
-                            ></i>
+                    <FaBars className='  text-2xl mr-4' />
+
                         </button>
                     </div>
                 </div>

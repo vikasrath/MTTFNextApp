@@ -14,10 +14,7 @@ export default function RootLayout({ children }) {
         className={``}
       >
        <Navbar/>
-       
-       
        {children}
-     
         <Footer/>
       </body>
     </html>

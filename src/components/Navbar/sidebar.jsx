@@ -7,6 +7,7 @@ import right_arrow from "../../../public/assets/navbar/right-arrow.png"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { CSSPlugin } from 'gsap/CSSPlugin';
+import { FaAngleRight } from 'react-icons/fa';
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -59,13 +60,8 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
                                 <button className="w-full text-left" onClick={() => toggleItem(sectionKey)}>
                                     <div className="flex justify-between">
                                         <div className="flex gap-3 items-center">
-                                            <Image
-                                                src={right_arrow}
-                                                alt="Right arrow"
-                                                className={`h-4 transition-transform ${
-                                                    expandedSections[sectionKey] ? 'rotate-90' : ''
-                                                }`}
-                                            />
+                                            
+                                               <FaAngleRight size={24} color="black"  className={` ${expandedSections[sectionKey] ? 'rotate-90' : ''}`}/>
                                             <span className="text-2xl font-medium">
                                                 {sectionKey.replace(/([A-Z])/g, ' $1')}
                                             </span>
@@ -84,12 +80,12 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
                                                     {section.links?.map((link) => (
                                                         <li key={link.path}>
                                                             <Link href={link.path}>
-                                                                <a
+                                                                <button
                                                                     className="text-sm text-gray-600"
                                                                     onClick={handleClose}
                                                                 >
                                                                     {link.linkName}
-                                                                </a>
+                                                                </button>
                                                             </Link>
                                                         </li>
                                                     ))}
@@ -99,15 +95,12 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
                                     </div>
                                 )}
                             </>
-                        ) : (
+                        ) :
+                         (
                             <div className="flex justify-between">
                                 <Link href={navItems[sectionKey]?.link || '#'}>
                                     <a onClick={handleClose} className="flex gap-3 items-center">
-                                        <Image
-                                            src={right_arrow}
-                                            alt="Right arrow"
-                                            className="h-4 transition-transform"
-                                        />
+                                    <FaAngleRight size={24} color="black" />
                                         <span className="text-2xl font-medium">
                                             {sectionKey.replace(/([A-Z])/g, ' $1')}
                                         </span>

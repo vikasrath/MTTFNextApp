@@ -8,9 +8,16 @@ import Image from 'next/image'
 function Logo({ theme }) {
     return (
         <>
-            <Link href='/'>
-                <Image src={logo} alt="Comapny logo" width={160} height={37} />
-            </Link>
+            
+            {theme == "light" ?
+                <Link href='/'>
+                    <Image src={logo} alt="Comapny logo" width={160} height={37} />
+                </Link>
+                :
+                <Link href='/'>
+                    <Image src={logoDark} alt="Comapny logo" width={160} height={37} />
+                </Link>
+            }
         </>
     )
 }
