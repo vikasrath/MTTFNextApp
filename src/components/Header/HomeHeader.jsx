@@ -44,12 +44,12 @@ function HomeHeader() {
           className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-6xl">
           Welcome To Math Tech Thiinking Foundation
         </h1>
-        <a href=""
-          className=" mt-8 border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
-          Forget about spending hundreds $
-        </a>
+        <button href=""
+          className=" bg-[#03518F] px-7 py-3 text-[15px] font-bold rounded-full text-white md:mt-10 mt-8">
+          Learn more
+        </button>
 
-        <h2 className="mx-auto mt-6 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
+        <h2 className="mx-auto  mt-3 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
           International association for Science, Technology, Engineering, and Mathematics professor
         </h2>
 
