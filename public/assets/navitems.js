@@ -14,6 +14,10 @@ const navItems = {
                 {
                     linkName: "Bioinformatics",
                     path: "/whatWeDo/services/bioinformatics"
+                },
+                {
+                    linkName: "Business Intelligence",
+                    path: "/whatWeDo/services/businessIntelligence"
                 }
             ]
         },
