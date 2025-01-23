@@ -15,10 +15,10 @@ function Home() {
       <Header
       isHome={true}
         />
-        <OurVisionMission />
       <ServiceSection />
       <Partners />
       <Cordinator />
+        {/* <OurVisionMission /> */}
       <ContactUs />
 
 

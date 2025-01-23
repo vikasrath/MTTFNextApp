@@ -34,7 +34,7 @@ function StudentChepter() {
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6 pb-4 border-blue-700 border-b-4">Advantages of STEM Student Chapters for Professionals</h2>
             <ul className="text-gray-700 text-md md:text-lg leading-relaxed mb-6 list-disc ml-5 space-y-4">
-              <List items={professionalBenefits} textclassName="text-gray-700 text-medium leading-6 md:leading-7" />
+              <List items={professionalBenefits} textClass="text-gray-700 text-medium leading-6 md:leading-7" />
             </ul>
           </div>
         </div>

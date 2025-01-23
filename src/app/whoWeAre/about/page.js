@@ -1,4 +1,5 @@
 import Header from '@/components/Header/Header';
+import OurVisionMission from '@/components/OurVisionMision/OurVisionMision';
 import React from 'react';
 
 function About() {
@@ -39,6 +40,7 @@ function About() {
               MTTF is fully dedicated to building a community based on respect, collegiality, and sensitivity.
             </p>
           </div>
+          <OurVisionMission />
         </div>
       </section>
     </>
