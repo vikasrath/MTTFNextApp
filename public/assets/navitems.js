@@ -48,7 +48,7 @@ const navItems = {
 
     whoWeAre: [
         {
-            heading: "Membership",
+            heading: "Membership & Community",
             links: [
                 {
                     linkName: "Login",

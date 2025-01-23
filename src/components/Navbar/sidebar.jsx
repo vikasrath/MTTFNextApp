@@ -1,13 +1,10 @@
 import React, { useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Logo from '../Logo/Logo';
-import cross from "../../../public/assets/navbar/cross.png"
-import right_arrow from "../../../public/assets/navbar/right-arrow.png"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { CSSPlugin } from 'gsap/CSSPlugin';
-import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight, FaTimes } from 'react-icons/fa';
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -48,7 +45,7 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
             <div className="flex justify-between items-center">
                 <Logo />
                 <button className="h-10 w-10" onClick={handleClose}>
-                    <Image src={cross} alt="Close Sidebar" className="h-full w-full object-cover" />
+                <FaTimes />
                 </button>
             </div>
 
