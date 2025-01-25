@@ -39,7 +39,7 @@ const Cordinator = () => {
   };
 
   return (
-    <div className="w-full py-12 px-4 bg-white">
+    <div className="w-full py-12 px-4 bg-white overflow-x-hidden">
       <h1 className="text-center md:text-4xl text-2xl font-medium border-b pb-6 mb-6 text-[#2C3E50] max-w-[90%] mx-auto">
         Executive Officers / Coordinators
       </h1>
