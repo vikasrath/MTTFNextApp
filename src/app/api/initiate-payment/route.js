@@ -17,7 +17,7 @@ export async function POST(req) {
         order_currency: "INR",
         customer_details: { customer_id:"7112AAA812234",customer_phone:phone,customer_name: name, customer_email: email },
         order_meta: {
-          return_url: "https://www.cashfree.com/devstudio/thankyou",
+          return_url: "http://localhost:3000",
           notify_url: "https://paymentgateway-omega.vercel.app/api/verify-payment",
         }
       },
