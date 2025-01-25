@@ -15,7 +15,7 @@ export async function POST(req) {
         orderId: orderId,
         order_amount: amount, // Set your payment amount
         order_currency: "INR",
-        customer_details: { customer_id: "7112AAA812234", customer_phone: phone, customer_name: name, customer_email: email },
+        customer_details: { customer_id:"7112AAA812234",customer_phone:phone,customer_name: name, customer_email: email },
         order_meta: {
           return_url: "https://www.cashfree.com/devstudio/thankyou",
           notify_url: "https://paymentgateway-omega.vercel.app/api/verify-payment",
@@ -33,8 +33,6 @@ export async function POST(req) {
 
     const newuser =  await createUser({name,email,phone,orderId});
     console.log(newuser);
-
-
 
     return new Response(
       JSON.stringify({ paymentUrl: cashfreeResponse.data.payment_link }),

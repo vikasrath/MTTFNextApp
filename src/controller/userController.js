@@ -1,24 +1,26 @@
 import user from "../Model/user.js";
 import dbConnect from "../lib/dbConnect.js";
 
-dbConnect();
 
 const createUser = async ({ name, email, phone, orderId }) => {
-  
-  try {
-    const newUser = await user.create(
-          {
-            name:name,
-            email:email,
-            phone:phone,
-            member:{orderId:orderId}
-        }
-          );
+  dbConnect();
 
-   return newUser;
+  try {
+    const newUser = await user(
+      {
+        name: name,
+        email: email,
+        phone: phone,
+        orderId: orderId
+      }
+    );
+
+    newUser.save();
+
+    return newUser;
   } catch (error) {
     console.log(error);
-    
+
   }
 }
 

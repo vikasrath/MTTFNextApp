@@ -13,14 +13,13 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    member : {
-        orderId :{
-            type: String
-        },
-        ismember:{
-            type: Boolean,
-            default: false
-        },
+    orderId: {
+        type: String,
+        required: true
+    },
+    ismember: {
+        type: Boolean,
+        default: false
     }
 
 })

@@ -7,7 +7,7 @@ const dbConnect = async () => {
   }
 
   try {
-    await mongoose.connect("mongodb://localhost:27017/MTTF", {
+    await mongoose.connect("mongodb+srv://devanshjindal31:123456dishu@cluster0.sa2rv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
