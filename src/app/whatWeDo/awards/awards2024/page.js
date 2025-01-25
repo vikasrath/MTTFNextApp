@@ -8,7 +8,11 @@ import img4 from '../../../../../public/assets/2024IEARG/IMG4.jpg';
 import img5 from '../../../../../public/assets/2024IEARG/IMG5.jpg';
 import Header from '@/components/Header/Header';
 
-function Award2024() {
+
+  function Award2024 () {
+
+  
+  
   return (
     <>
       

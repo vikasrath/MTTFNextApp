@@ -9,7 +9,7 @@ function OurVisionMission() {
         <div className="flex items-center mb-4">
           <FaLightbulb className="text-blue-600 text-3xl mr-3" />
           <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800">
-            What is our Vision?
+           Our Vision?
           </h1>
         </div>
         <p className="text-gray-600 text-lg leading-relaxed">

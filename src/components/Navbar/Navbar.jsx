@@ -44,7 +44,7 @@ const Navbar = () => {
                     <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
                         <nav className="hidden lg:flex space-x-4 font-medium">
                             <button
-                                className={`border-none px-3 ${
+                                className={`border-none px-3 hover:text-gray-400 ${
                                     selected === 'whatWeDo'
                                         ? ' bg-slate-200 text-blue-500 rounded-lg py-1 '
                                         : ''
@@ -54,12 +54,12 @@ const Navbar = () => {
                                 What We Do
                             </button>
                             <Link href="/">
-                                <button className="border-none px-3 py-2">
+                                <button className="border-none px-3 py-2 hover:text-gray-400">
                                     What We Think
                                 </button>
                             </Link>
                             <button
-                                className={`border-none px-3 ${
+                                className={`border-none px-3 hover:text-gray-400 ${
                                     selected === 'whoWeAre'
                                         ? ' bg-slate-200 text-blue-500 rounded-lg py-1 '
                                         : ''
