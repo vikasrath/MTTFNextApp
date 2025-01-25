@@ -42,7 +42,7 @@ function HomeHeader() {
 
         <h1 ref={headingRef}
           className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-6xl">
-          Welcome To Math Tech Thiinking Foundation
+          Welcome To MTTF
         </h1>
         <Link href="/whoWeAre/about"
           className=" bg-[#03518F] px-7 py-3 text-[15px] font-bold rounded-full text-white md:mt-10 mt-8">

@@ -56,7 +56,7 @@ const navItems = {
             links: [
                 {
                     linkName: "Login",
-                    path: "https://www.mttf.in/member-login/"
+                    path: "/signin"
                 },
                 {
                     linkName: "Individual Membership",
