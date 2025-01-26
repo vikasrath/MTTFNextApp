@@ -4,7 +4,7 @@ import Image from 'next/image';
 function AdvisoryCommittee() {
     return (
         <>
-            <div className="flex flex-col bg-slate-300 p-6 md:p-10 lg:p-14">
+            <div className="flex flex-col  p-6 md:p-10 lg:p-14">
                 <div className="text-center mb-10">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">
                         Advisory Committee

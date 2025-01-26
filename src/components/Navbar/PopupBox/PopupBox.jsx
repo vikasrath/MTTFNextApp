@@ -14,20 +14,20 @@ function PopupBox({ linkBox, closeIcon }) {
                     &times;
                 </button>
 
-                <div className="p-6 flex flex-wrap justify-center gap-8 max-w-6xl mx-auto h-full">
+                <div className="p-6 flex flex-wrap justify-center gap-8 max-w-6xl mx-auto ">
                     {linkBox.map((category, index) => (
                         <div key={index} className="flex-1 min-w-[200px] text-white space-y-4">
                             {category.links && (
                                 <h3 className="text-2xl font-semibold">{category.heading}</h3>
                             )}
                             
-                            <ul className="space-y-2">
+                            <ul className="space-y-2 ">
                                 {category.links ? (
                                     category.links.map((link, linkIndex) => (
                                         <li key={linkIndex} className="transition-transform duration-200">
                                             <Link
                                                 href={link.path}
-                                                className="block text-white hover:bg-gray-800 p-2 rounded-md transition-colors duration-200"
+                                                className="block text-[17px] text-white hover:bg-gray-800 p-2 rounded-md transition-colors duration-200"
                                                 onClick={() => closeIcon(null)}
                                             >
                                                 {link.linkName}

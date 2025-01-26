@@ -52,7 +52,7 @@ const navItems = {
 
     whoWeAre: [
         {
-            heading: "Membership & Community",
+            heading: "Mathtech Circle",
             links: [
                 {
                     linkName: "Login",
@@ -100,6 +100,10 @@ const navItems = {
                 {
                     linkName: "About",
                     path: "/whoWeAre/about"
+                },
+                {
+                    linkName: "Contact",
+                    path: "/whoWeAre/contact"
                 }
             ]
 

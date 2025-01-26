@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import meher from "../../../../../public/assets/GovermentBodyImage/meher.jpg"
 import pooja from "../../../../../public/assets/GovermentBodyImage/pooja.jpg";
@@ -14,8 +16,14 @@ import daljeet from "../../../../../public/assets/GovermentBodyImage/daljeet.jpg
 import Header from '@/components/Header/Header';
 import GoverningBodyCard from '@/components/GoverningBodyCard/GoverningBodyCard';
 import AdvisoryCommittee from '../advisoryCommittee/page';
+import { useState } from 'react';
+import { FaBullseye, FaHandshake } from "react-icons/fa";
 
 function GoverningBody() {
+
+    const [govbody, setgovbody] = useState(true)
+    const [advisor, setadvisor] = useState(false)
+
     const governingBody = [
         { name: "Mehar Chand, Ph.D", position: "Founder & President (MTTF, India)", memberId: "MTTF5575130", img: meher },
         { name: "Gurmej Singh Sandhu, Ph.D", position: "General Secretary (MTTF, India)", memberId: "MTTF2017073", img: gurmeet },
@@ -31,39 +39,65 @@ function GoverningBody() {
         { name: "Jatin Bansal, JRF", position: "Executive Member (MTTF, India)", memberId: "MTTF19541982", img: jatin }
     ];
 
+    const handlegovbody = () => {
+        setgovbody(true)
+        setadvisor(false)
+    }
+    const handleadvisiors = () => {
+        setgovbody(false)
+        setadvisor(true)
+    };
+
     return (
         <>
-           
-                
-                <Header
-                    title="Our Visionary Leaders"
-                    description="Meet the visionary leaders of the MathTech Thinking Foundation (MTTF), whose expertise and dedication drive innovation and educational excellence. Their guidance empowers individuals, fosters academic growth, and promotes a brighter future in mathematics and technology."
-                />
-            
+
+
+            <Header
+                title="Our Visionary Leaders"
+                description="Meet the visionary leaders of the MathTech Thinking Foundation (MTTF), whose expertise and dedication drive innovation and educational excellence. Their guidance empowers individuals, fosters academic growth, and promotes a brighter future in mathematics and technology."
+            />
+
+<div className="flex justify-center items-center h-26 mt-20 ">
+        <button
+          onClick={handlegovbody}
+          className={`flex items-center justify-center gap-2 px-6 w-40 py-3 rounded-2xl font-semibold transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none ${govbody
+            ? "bg-[#3784A8] text-white hover:bg-[#3784A8]"
+            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+          }`}
+        >
+          <FaBullseye size={20} /> Leadership
+        </button>
+        <button
+          onClick={handleadvisiors}
+          className={`flex items-center justify-center gap-2 px-6 w-40 py-3 rounded-2xl font-semibold transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none ${advisor
+            ? "bg-[#3784A8] text-white hover:bg-[#3784A8]"
+            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+          }`}
+        >
+          <FaHandshake size={20} /> Advisors
+        </button>
+      </div>
+
 
             {/* governingBody.................. */}
-            <div className="flex flex-col bg-slate-300 md:p-8 pt-24">
-                <div className="text-center mb-6">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-2">
-                        The Governing Body
-                    </h1>
-                    <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-                        The MathTech Thinking Foundation (referred to in short as MTTF or the
-                        Foundation) is governed by the board of directors of the foundation and
-                        the Executive Members. The board of directors includes three office-bearers of the foundation. These honourary office bearers are:
-                    </p>
+            {govbody && (
+                <div className="flex flex-col  md:p-8 pt-24">
+
+
+                    <div className="flex flex-wrap justify-center px-4">
+                        {governingBody.map((member) => (
+                            <div key={member.memberId} className=" w-full md:w-[50%] lg:w-[30%] mt-12 ">
+                                <GoverningBodyCard member={member} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex flex-wrap justify-center px-4">
-                    {governingBody.map((member) => (
-                        <div key={member.memberId} className=" w-full md:w-[50%] lg:w-[30%] mt-12 ">
-                            <GoverningBodyCard member={member} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-                
+            )}
+
             {/* advisorcomittee.................. */}
-            <AdvisoryCommittee/>
+            {advisor && (
+                <AdvisoryCommittee />
+            )}
         </>
     );
 }
