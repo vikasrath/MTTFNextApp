@@ -4,7 +4,7 @@ const navItems = {
             heading: "Capability",
             links: [
                 {
-                    linkName: "Data & artificial Inteligence",
+                    linkName: "AI & ML",
                     path: "/whatWeDo/services/dataAndAi"
                 },
                 {
