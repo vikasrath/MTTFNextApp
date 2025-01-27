@@ -15,6 +15,7 @@ import jatin from "../../../../../public/assets/GovermentBodyImage/jatin.jpeg";
 import daljeet from "../../../../../public/assets/GovermentBodyImage/daljeet.jpg";
 import Header from '@/components/Header/Header';
 import GoverningBodyCard from '@/components/GoverningBodyCard/GoverningBodyCard';
+import sourabh from "../../../../../public/assets/GovermentBodyImage/sourabh.jpg";
 import AdvisoryCommittee from '../advisoryCommittee/page';
 import { useState } from 'react';
 import { FaBullseye, FaHandshake } from "react-icons/fa";
@@ -26,6 +27,7 @@ function GoverningBody() {
 
     const governingBody = [
         { name: "Mehar Chand, Ph.D", position: "Founder & President (MTTF, India)", memberId: "MTTF5575130", img: meher },
+        { name: "Sourabh Kumar", position: "AVP", memberId: "NULL", img: sourabh, profile: "https://www.linkedin.com/in/sourabhkumar91/" },
         { name: "Gurmej Singh Sandhu, Ph.D", position: "General Secretary (MTTF, India)", memberId: "MTTF2017073", img: gurmeet },
         { name: "Jaswinder Pal, Ph.D", position: "Director of Accounts (MTTF, India)", memberId: "MTTF6104175", img: jasswinder },
         { name: "Biswaranjan Senapati, Ph.D", position: "Executive Member (MTTF, India)", memberId: "MTTF19596466", img: biswaranjan },

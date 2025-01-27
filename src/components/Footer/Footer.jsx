@@ -6,7 +6,7 @@ function Footer() {
     const ourCompanyLink = ["About Us", "Mission & Vision", "Leadership and Advisory", "Life and MTTF", "Governing Body", "MoU/Collaboration"];
     const servicesLink = ["Conferences", "Workshops", "Skill Development", "Internships & Training"];
     const resourcesLink = ["Certificate", "Terms & Conditions"];
-    const contact = ["contactus@mttf.in", "+91-896-829-4003"];
+    const contact = ["contactus@mttf.in", "+91-896-829-4003", "+1-336-493-9643 "];
 
     return (
         <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-16">

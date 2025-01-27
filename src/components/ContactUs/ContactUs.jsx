@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaRegEnvelope } from 'react-icons/fa';
 
 function ContactUs() {
     return (
@@ -32,9 +33,9 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl dark:text-white ">Address</h3>
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl">Address</h3>
                                             <p className="text-gray-600 dark:text-slate-400">
-                                            SN #4 Divi St Fazilka-Abohar Road <br /> Near Bus Stand, PB,   <br />INDIA 152123</p>
+                                            2048 CANYON CREEK CT,<br /> AURORA, IL-60503,  <br />IL, USA</p>
 
                                         </div>
                                     </li>
@@ -47,17 +48,17 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-6">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl dark:text-white"> Phone </h3>
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl"> Phone </h3>
                                             <p className="text-gray-600 dark:text-slate-400">
                                             +91-896-829-4003</p>
                                         </div>
                                     </li>
                                     <li className="flex">
                                         <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                        <i className="fa-regular fa-envelope text-2xl"></i>
+                                        <FaRegEnvelope className="text-2xl" />
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl dark:text-white">Email</h3>
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 lg:text-2xl">Email</h3>
                                             <p className="text-gray-600 dark:text-slate-400">
                                             contactus@mttf.in
 
@@ -67,7 +68,7 @@ function ContactUs() {
                                 </ul>
                             </div>
                             <div className="card h-fit max-w-6xl p-5 md:p-12 " id="form">
-                                <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
+                                <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
                                 <form id="contactForm">
                                     <div className="mb-6">
                                         <div className="mx-0 mb-1 sm:mb-4">
