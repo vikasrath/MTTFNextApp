@@ -26,20 +26,7 @@ function AdvisoryCommittee() {
                         <p className="text-xl font-medium">
                             <span>Member ID:</span> MTTF5575130
                         </p>
-                        <div className="flex space-x-4 mt-6 sm:hidden lg:block">
-                            <a
-                                href=""
-                                className="flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 md:py-4 md:px-8"
-                            >
-                                Getting started
-                            </a>
-                            <a
-                                href=""
-                                className="flex items-center justify-center px-6 py-3 text-base font-medium text-blue-500 bg-white border border-gray-300 rounded-md hover:text-blue-600 md:py-4 md:px-8"
-                            >
-                                Contribute
-                            </a>
-                        </div>
+                        
                     </div>
                     <div className="flex items-center justify-center w-full md:w-1/2 mt-6 md:mt-0">
                         <div className="w-full max-w-sm p-4 md:p-6 lg:p-8">
