@@ -1,97 +1,45 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
-import { headingAnimation } from "../../GsapAnimation/Gsap";
 import introVideo from "../../../public/assets/introMTTF.mp4";
 import Link from "next/link";
 
 function HomeHeader() {
-  const headingRef = useRef();
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    headingAnimation(headingRef);
-  }, []);
-
-  const handlePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const handleVideoPlay = () => {
-    setIsPlaying(true);
-  };
-
-  const handleVideoPause = () => {
-    setIsPlaying(false);
-  };
 
   return (
-    <>
-
-
-
-      <div
-        className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r  from-[#283853] to-gray-900 text-white">
-
-        <h1 ref={headingRef}
-          className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-6xl">
-          Welcome To MTTF
-        </h1>
-        <Link href="/whoWeAre/about"
-          className=" bg-[#03518F] px-7 py-3 text-[15px] font-bold rounded-full text-white md:mt-10 mt-8">
-          Learn more
-        </Link>
-
-        <h2 className="mx-auto  mt-3 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
-          International association for Science, Technology, Engineering, and Mathematics professor
-        </h2>
-
-        <div className=" w-full px-4 md:px-0 mt-8">
-          <div className="relative flex justify-center">
-            {/* Video Element */}
-            <video
-              ref={videoRef}
-              className="rounded-xl w-full max-w-[90%] md:max-w-[80%] h-auto"
-              controls
-              playsInline
-              preload="metadata"
-              onPlay={handleVideoPlay}
-              onPause={handleVideoPause}
+    <div className="relative min-h-screen">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+      >
+        <source src={introVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+        <div className="text-center text-white px-4 sm:px-8">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            Welcome to <span className="text-blue-400">MTTF</span>
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl mb-8">
+            International association for Science, Technology, Engineering, and Mathematics professors.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/whoWeAre/about"
+              className="px-6 py-3 bg-blue-600 text-sm sm:text-lg rounded-full font-bold hover:bg-blue-700 transition"
             >
-              <source src={introVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Play Button Overlay */}
-            {!isPlaying && (
-              <button
-                onClick={handlePlayPause}
-                className="absolute inset-0 flex justify-center items-center bg-transparent"
-                aria-label="Play video"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="white"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
-            )}
+              Learn More
+            </Link>
+            <Link
+              href="/contact"
+              className="px-6 py-3 border-2 border-white text-sm sm:text-lg rounded-full hover:bg-white hover:text-black transition"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
-
-    </>
+    </div>
   );
 }
 

@@ -1,92 +1,98 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../Logo/Logo';
-import PopupBox from './PopupBox/PopupBox';
-import navItems from '../../../public/assets/navitems';
-import SideBar from './sidebar';
-import { FaBars } from 'react-icons/fa';
-
+import NavbarMobileMenu from './NavbarMobileMenu';
+import NavbarPopup from './NavbarPopup';
 
 const Navbar = () => {
-    const [togled, setTogled] = useState(false);
-    const [selected, setSelected] = useState(null);
-
-    const handelClick = () => {
-        setTogled((prev) => !prev);
-    };
-    const handleBtnClick = (name) => {
-        setSelected(name);
-    };
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [popupContent, setPopupContent] = useState('');
 
     useEffect(() => {
-        const isPopupOpen = selected;
-        document.body.style.overflow = isPopupOpen ? 'hidden' : 'auto';
-
-        return () => {
-            document.body.style.overflow = 'auto';
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
         };
-    }, [selected]);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const openPopup = (content) => {
+        setPopupContent(content);
+        setIsPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+        setPopupContent('');
+    };
 
     return (
-        <>
-        
-            <SideBar togled={togled} setTogled={setTogled} navItems={navItems} />
-            <nav className="bg-gradient-to-r from-[#283853] to-gray-900 flex justify-center items-center w-full z-30 text-m xl:text-xl">
-                <div
-                    className="mx-4 rounded-full px-3 md:py-4 py-1 flex items-center justify-between w-full lg:w-10/12 "
-                    style={{ border: '1px solid rgba(255, 255, 255, 0.2)' }}
-                >
-                    <div className="flex space-x-3 md:my-1">
+        <div className='h-fit block' >
+            <nav
+                className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled || isMenuOpen ? 'bg-gray-900 bg-opacity-90 shadow-lg' : 'bg-transparent'
+                    }`}
+            >
+                <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between py-4">
+                    {/* Logo */}
+                    <div>
                         <Logo theme="light" />
                     </div>
 
-                    <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
-                        <nav className="hidden lg:flex space-x-4 font-medium">
-                            <button
-                                className={`border-none px-3 hover:text-gray-400 ${
-                                    selected === 'whatWeDo'
-                                        ? ' bg-slate-200 text-blue-500 rounded-lg py-1 '
-                                        : ''
-                                }`}
-                                onClick={() => handleBtnClick('whatWeDo')}
-                            >
-                                What We Do
-                            </button>
-                            <Link href="/">
-                                <button className="border-none px-3 py-2 hover:text-gray-400">
-                                    What We Think
-                                </button>
-                            </Link>
-                            <button
-                                className={`border-none px-3 hover:text-gray-400 ${
-                                    selected === 'whoWeAre'
-                                        ? ' bg-slate-200 text-blue-500 rounded-lg py-1 '
-                                        : ''
-                                }`}
-                                onClick={() => handleBtnClick('whoWeAre')}
-                            >
-                                Who We Are
-                            </button>
-                        </nav>
+                    {/* Desktop Navigation */}
+                    <div className="hidden lg:flex space-x-8 items-center">
+                        <Link
+                            href="/"
+                            className="text-white text-lg font-medium hover:text-blue-400 transition"
+                        >
+                            Home
+                        </Link>
+                        <button
+                            onClick={() => openPopup('What We Do')}
+                            className="text-white text-lg font-medium hover:text-blue-400 transition"
+                        >
+                            What We Do
+                        </button>
+                        <button
+                            onClick={() => openPopup('What we Think')}
+                            className="text-white text-lg font-medium hover:text-blue-400 transition"
+                        >
+                            What We Think
+                        </button>
+                        <button
+                            onClick={() => openPopup('Who We Are')}
+                            className="text-white text-lg font-medium hover:text-blue-400 transition"
+                        >
+                            Who We Are
+                        </button>
+                        <Link
+                            href="/contact"
+                            className="text-white text-lg font-medium hover:text-blue-400 transition"
+                        >
+                            Contact
+                        </Link>
                     </div>
 
-                    <div className="lg:hidden text-right py-1 navmenubar items-center justify-center">
-                        <button onClick={handelClick} className="text-white">
-                    <FaBars className='  text-2xl mr-4' />
-
+                    {/* Hamburger Menu */}
+                    <div className="lg:hidden">
+                        <button
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className="text-white text-2xl focus:outline-none"
+                        >
+                            {isMenuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>
                 </div>
 
-                {selected && (
-                    <PopupBox
-                        linkBox={navItems[selected]}
-                        closeIcon={setSelected}
-                    />
-                )}
+                {/* Mobile Menu */}
+                <NavbarMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} openPopup={openPopup} />
             </nav>
-        </>
+                {/* Full-Screen Popup */}
+                {isPopupOpen && <NavbarPopup popupContent={popupContent} closePopup={closePopup} />}
+        </div>
     );
 };
 
