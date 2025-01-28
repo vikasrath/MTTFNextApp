@@ -50,6 +50,18 @@ const navItems = {
         }
     ],
 
+    whatWeThink: [
+        {
+            heading: "Blog",
+            links: [
+                {
+                    linkName: "All Blogs",
+                    path: "#"
+                }
+            ]        
+        }
+    ],
+
     whoWeAre: [
         {
             heading: "Mathtech Circle",

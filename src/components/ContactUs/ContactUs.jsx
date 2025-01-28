@@ -52,7 +52,7 @@ function ContactUs() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-200">Phone</h3>
-                                    <p className="text-gray-400">+91-896-829-4003</p>
+                                    <p className="text-gray-400">+1-336-493-9643</p>
                                 </div>
                             </li>
 
