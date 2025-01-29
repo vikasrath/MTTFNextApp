@@ -79,10 +79,10 @@ function Footer() {
             {/* Social Icons */}
             <div className="flex space-x-6 mt-6 md:mt-0">
               {[
-                { icon: <FaFacebookF />, link: "#" },
-                { icon: <FaTwitter />, link: "#" },
-                { icon: <FaInstagram />, link: "#" },
-                { icon: <FaLinkedinIn />, link: "#" },
+                { icon: <FaFacebookF />, link: "https://www.facebook.com/p/MTTF-100064038192483/" },
+                { icon: <FaTwitter />, link: "https://twitter.com/mttf14" },
+                { icon: <FaInstagram />, link: "https://www.instagram.com/mathtechthinking/" },
+                { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/company/mttf" },
               ].map((social, idx) => (
                 <a
                   key={idx}

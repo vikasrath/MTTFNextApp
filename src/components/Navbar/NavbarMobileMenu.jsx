@@ -26,7 +26,7 @@ const NavbarMobileMenu = ({ isMenuOpen, setIsMenuOpen, navItems }) => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="lg:hidden absolute top-full left-0 w-full bg-gray-900 bg-opacity-90 py-6 max-h-[88vh] overflow-y-auto">
+    <div className="lg:hidden absolute top-full left-0 w-full bg-gray-900 py-6 max-h-[88vh] overflow-y-auto">
       <div className="flex flex-col px-4 space-y-4">
         <Link
           href="/"

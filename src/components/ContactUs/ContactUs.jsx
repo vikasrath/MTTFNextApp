@@ -16,7 +16,7 @@ function ContactUs() {
 
             <div className="container mx-auto max-w-7xl px-6 lg:px-12">
                 {/* Header Section */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 mt-4 lg:mt-8">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-white">Get in Touch</h2>
                     <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
                         We’re here to help you 24/7. Reach out to us anytime with any inquiries.
