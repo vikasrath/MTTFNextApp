@@ -54,7 +54,7 @@ function Award2025() {
                  
 
                     title="IEARG Award 2025"
-                    description="The Awards 2025 will be held on National Science Day, observed every year on 28 February to commemorate the discovery of the Raman effect by the esteemed Indian physicist Sir C. V. Raman on 28 February 1928. This event, in partnership with Sharda University, India, honors remarkable achievements in a variety of fields, with a total prize fund of 500,000 INR awarded across several categories."
+                    description="The 2025 Awards will be held on National Science Day, February 28, to honor the discovery of the Raman effect by Sir C. V. Raman. In partnership with Sharda University, India, the event will recognize outstanding achievements across various fields, with a prize fund of 500,000 INR."
                 />
                 
            

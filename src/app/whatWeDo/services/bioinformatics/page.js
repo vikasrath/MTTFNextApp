@@ -8,22 +8,14 @@ function BioinformaticsPage() {
                 <Header
                     title="Exploring the Future of Bioinformatics"
 
-                    description="Unlock the potential of bioinformatics: Learn to analyze biological data and drive innovations in genomics, healthcare, and research."
+                    description="Unlock the potential of Bioinformatics: Learn to analyze biological data and drive innovations in genomics, healthcare, and research."
 
                 />
             
             
             <div className="bg-gradient-to-b from-blue-50 via-white to-gray-100 text-gray-800 min-h-screen py-12">
                 <div className="max-w-7xl mx-auto px-6">
-                    {/* Header */}
-                    <header className="text-center mb-16">
-                        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
-                            Welcome to <span className="text-blue-600">Meth Tech Thinking Foundation</span>
-                        </h1>
-                        <p className="mt-6 text-lg md:text-xl text-gray-600">
-                            Your Gateway to Bioinformatics Learning!
-                        </p>
-                    </header>
+                    
 
                     {/* Why Learn Bioinformatics Section */}
                     <section className="mb-20">

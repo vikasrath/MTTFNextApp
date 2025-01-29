@@ -8,25 +8,12 @@ function Header({ title, description, isHome = false }) {
       {isHome ? (
         <HomeHeader />
       ) : (
-        <div className="relative bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white min-h-[80vh] flex items-center justify-center px-6">
+        <div className="relative bg-gradient-to-br from-gray-900 via-gray-900 to-gray-700 text-white min-h-[80vh] flex items-center justify-center px-6">
           {/* Background Patterns */}
           <div className="absolute inset-0">
-            {/* <svg
-              className="absolute top-0 left-0 w-full h-full opacity-10"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 800 600"
-              preserveAspectRatio="none"
-            >
-              <circle cx="400" cy="300" r="300" fill="url(#gradient)" />
-              <defs>
-                <radialGradient id="gradient" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#1e3a8a" />
-                  <stop offset="100%" stopColor="transparent" />
-                </radialGradient>
-              </defs>
-            </svg> */}
+           
           </div>
-          <div className="absolute top-10 left-20 w-36 h-36 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-full blur-3xl opacity-30"></div>
+         
           <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-tr from-cyan-500 to-teal-500 rounded-full blur-3xl opacity-40"></div>
 
           {/* Content */}

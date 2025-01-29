@@ -7,15 +7,15 @@ const DataAndAiPage = () => {
         <>
             
                 <Header
-                    title="Unlocking the Power of Data and Artificial Intelligence"
-                    description="Data and AI are transforming industries by analyzing massive datasets, automating tasks, and mimicking human decision-making. Our platform equips you with practical skills in AI, from machine learning to NLP, unlocking career opportunities in this rapidly evolving field."
+                    title=" Data Science and Artificial Intelligence"
+                    description="Data and AI are revolutionizing industries through automation and smart analytics. Our platform equips you with hands-on AI skills, from machine learning to NLP, opening new career opportunities."
 
                 />
            
             <div className="bg-gray-50 text-gray-800 p-6 md:p-12">
                 {/* Header Section */}
                 <section className="text-center mb-16">
-                    <h1 className="text-4xl font-semibold text-indigo-700 mb-4">Welcome to Math Tech Thinking Foundation - Dive Into the World of Artificial Intelligence</h1>
+                    <h1 className="text-4xl font-semibold text-indigo-700 mb-4"> Dive Into the World of Artificial Intelligence</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         At <strong>Math Tech Thinking Foundation</strong>, we bring you the tools, knowledge, and hands-on training to master the fascinating field of <strong>Artificial Intelligence (AI)</strong>. Whether you're a student, developer, or professional, our platform will guide you in understanding and leveraging AI to transform industries and solve real-world challenges.
                     </p>

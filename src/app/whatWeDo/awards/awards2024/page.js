@@ -18,7 +18,7 @@ import Header from '@/components/Header/Header';
       
         <Header
           title="IEARG Award 2024"
-          description="The International EARG Awards 2024, organized by MTTF in association with Poornima Engineering College, Jaipur, took place on March 19, 2024, in Fazilka, India. Awards were presented across nine categories, including Lifetime Achievement in Academia and Research, Excellence in Academic Leadership, Research and Development, International Achievements, Innovation through Collaboration, Outstanding Faculty, Young Researcher, Young Entrepreneur, and Innovative Startup of the Year."
+          description="The International EARG Awards 2024, organized by MTTF with Poornima Engineering College, Jaipur, was held on March 19 in Fazilka, India. Awards were given in nine categories, including Lifetime Achievement, Academic Leadership, Research & Development, Innovation, and Young Entrepreneur."
         />
      
 
