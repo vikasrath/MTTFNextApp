@@ -16,13 +16,10 @@ function Header({ title, description, button, buttonLink, isHome = false }) {
                 (
 
                     <div
-                        className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r  from-[#283853] to-gray-900 text-white">
-                        <a href=""
-                            className="border border-white-700 rounded-lg py-2 px-4 text-white-400 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500">
-                            Forget about spending hundreds $
-                        </a>
+                        className="flex flex-1 w-full flex-col  min-h-[600px] items-center justify-center text-center px-4 py-20 bg-gradient-to-r  from-[#283853] to-gray-900 text-white">
+
                         <h1
-                            className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-white-300 sm:text-7xl">
+                            className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-white-300 sm:text-5xl">
                             {title}
                             <span className="relative whitespace-nowrap text-[#3067af] ">
                                 <svg aria-hidden="true" viewBox="0 0 418 42" className="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#efefef] " preserveAspectRatio="none">
@@ -34,8 +31,6 @@ function Header({ title, description, button, buttonLink, isHome = false }) {
                         <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-white-400 text-white-500 leading-7">
                             {description}
                         </h2>
-                        <a className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-blue-500 transition"
-                            href="">{button ? button : "Lean more"}</a>
                     </div>
 
                 )}
