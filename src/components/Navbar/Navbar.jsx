@@ -5,6 +5,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../Logo/Logo';
 import NavbarMobileMenu from './NavbarMobileMenu';
 import NavbarPopup from './NavbarPopup';
+import navItems from './../../../public/assets/navitems';
+
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,23 +49,24 @@ const Navbar = () => {
                         <Link
                             href="/"
                             className="text-white text-lg font-medium hover:text-blue-400 transition"
+                            onClick={() => setIsPopupOpen(false)}
                         >
                             Home
                         </Link>
                         <button
-                            onClick={() => openPopup('What We Do')}
+                            onClick={() => openPopup('whatWeDo')}
                             className="text-white text-lg font-medium hover:text-blue-400 transition"
                         >
                             What We Do
                         </button>
                         <button
-                            onClick={() => openPopup('What we Think')}
+                            onClick={() => openPopup('whatWeThink')}
                             className="text-white text-lg font-medium hover:text-blue-400 transition"
                         >
                             What We Think
                         </button>
                         <button
-                            onClick={() => openPopup('Who We Are')}
+                            onClick={() => openPopup('whoWeAre')}
                             className="text-white text-lg font-medium hover:text-blue-400 transition"
                         >
                             Who We Are
@@ -71,6 +74,7 @@ const Navbar = () => {
                         <Link
                             href="/contact"
                             className="text-white text-lg font-medium hover:text-blue-400 transition"
+                            onClick={() => setIsPopupOpen(false)}
                         >
                             Contact
                         </Link>
@@ -88,10 +92,10 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <NavbarMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} openPopup={openPopup} />
+                <NavbarMobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} navItems={navItems} />
             </nav>
                 {/* Full-Screen Popup */}
-                {isPopupOpen && <NavbarPopup popupContent={popupContent} closePopup={closePopup} />}
+                {isPopupOpen && <NavbarPopup popupContent={popupContent} closePopup={closePopup} navItems={navItems}/>}
         </div>
     );
 };
