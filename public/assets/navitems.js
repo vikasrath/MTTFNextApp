@@ -64,6 +64,30 @@ const navItems = {
 
     whoWeAre: [
         {
+            heading: "About MTTF",
+            links: [
+                {
+                    linkName: "About",
+                    path: "/whoWeAre/about"
+                },
+                {
+                    linkName: "Contact",
+                    path: "/whoWeAre/contact"
+                }
+            ]
+
+        },
+        {
+            heading: "Our Organisation",
+            links: [
+                {
+                    linkName: "Leaders",
+                    path: "/whoWeAre/organization/leaders"
+                }
+            ]
+
+        },
+        {
             heading: "Mathtech Circle",
             links: [
                 {
@@ -95,30 +119,6 @@ const navItems = {
 
 
             ]
-        },
-        {
-            heading: "Our Organisation",
-            links: [
-                {
-                    linkName: "Leaders",
-                    path: "/whoWeAre/organization/governingbody"
-                }
-            ]
-
-        },
-        {
-            heading: "About MTTF",
-            links: [
-                {
-                    linkName: "About",
-                    path: "/whoWeAre/about"
-                },
-                {
-                    linkName: "Contact",
-                    path: "/whoWeAre/contact"
-                }
-            ]
-
         }
     ]
 }
