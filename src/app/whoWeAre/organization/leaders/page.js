@@ -2,11 +2,10 @@
 
 import React from 'react';
 import Header from '@/components/Header/Header';
-import AdvisoryCommittee from '../advisoryCommittee/page';
 import { useState } from 'react';
 import { FaBullseye, FaHandshake } from "react-icons/fa";
 import { leaders } from './leadersData';
-import LeadershipCard from '@/components/GoverningBodyCard/LeadershipCard';
+import LeadershipCard from '@/components/LeadershipCard/LeadershipCard';
 
 function GoverningBody() {
 
