@@ -15,7 +15,7 @@ export default function LeadershipCard({ leader }) {
                     <p className="text-xs md:text-sm xl:text-lg text-gray-500 text-start mb-4">{leader.position}</p>
                     <div className="flex justify-start space-x-4 ">
                         <a href={leader.profileLink} target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="w-5 h-5 text-blue-700 hover:text-blue-900 transition-colors duration-300" />
+                            <FaLinkedin className="w-6 h-6 md:h-7 md:w-7 text-blue-700 hover:text-blue-900 transition-colors duration-300 rounded-lg" />
                         </a>
                     </div>
                 </div>
