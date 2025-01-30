@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-function ServicesCard({ Number, title, discription, logoStatic, logoGif }) {
+function ServicesCard({ title, discription, logoStatic, logoGif }) {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -15,13 +15,10 @@ function ServicesCard({ Number, title, discription, logoStatic, logoGif }) {
 
     return (
         <div
-            className="mt-12 lg:ml-12 w-96 bg-white box-border shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 pt-5 space-y-3 relative overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-md hover:border-[#392ce7] hover:border"
+            className="mt-12 lg:ml-12 w-96 bg-white box-border shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 pt-5 space-y-3 relative overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-md hover:border-[#392ce7] hover:border flex flex-col justify-center items-center"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className="w-24 h-24 bg-violet-500 rounded-full absolute -right-5 -top-7">
-                <p className="absolute bottom-6 left-7 text-white text-2xl">{Number}</p>
-            </div>
             <div className="w-24">
                
                 <Image src={isHovered ? logoGif : logoStatic} alt="service logo" className="h-full w-full" />
