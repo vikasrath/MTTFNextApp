@@ -23,7 +23,7 @@ function IndividualMembership() {
             question: "How to register for Lifetime Membership?",
             answer: (
 
-                "First click on become a member icon, fill in the required and authentic details in the registration form and submit it. After submition, you will receive an email to activate your account. After successful activation of your account, you will get your Member ID on your email address. <br /> <br />Further, registered members can join at most three MTTF-Societies of your interest. To join these societies, you need to log in your account, then go to MTTF-Societies and submit the details."
+                "First click on become a member icon, fill in the required and authentic details in the registration form and submit it. After submition, you will receive an email to activate your account. After successful activation of your account, you will get your Member ID on your email address. Further, registered members can join at most three MTTF-Societies of your interest. To join these societies, you need to log in your account, then go to MTTF-Societies and submit the details."
 
             )
         },
@@ -45,14 +45,14 @@ function IndividualMembership() {
     return (
         <>
 
-                <Header
-                    title="Become a Member"
-                    description="The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. An invoice link will be sent after registration."
+            <Header
+                title="Become a Member"
+                description="The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. An invoice link will be sent after registration."
 
-                    button="BECOME A MEMBER"
-                    buttonLink='https://www.mttf.in/become-a-member/'
-                />
-           
+                button="BECOME A MEMBER"
+                buttonLink='https://www.mttf.in/become-a-member/'
+            />
+
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -78,27 +78,42 @@ function IndividualMembership() {
                 </div>
             </section>
 
-            <section className="bg-gray-100 py-12 px-6 md:px-12">
-                <div className="max-w-4xl mx-auto text-center ">
+            <section className="bg-gradient-to-r 200 py-16 px-6 md:px-12">
+  <div className="max-w-4xl mx-auto text-center space-y-8">
+    
+    <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+      Lifetime Membership Fee
+    </h2>
 
-                    <h2 className="text-3xl font-bold text-gray-800 mb-4 ">Lifetime Membership Fee</h2>
+    <p className="text-lg text-gray-700">
+      New Members, who registered on 1/1/2022 onwards, are required to pay their membership fee within the current month after registration. After the fee confirmation, a membership certificate will be sent via the registered email address.
+      <br /><br />
+      The lifetime membership fee for Indians is ₹2000 and for international members is $200. Interested candidates from most underdeveloped countries, such as Eritrea, Guinea, Madagascar, Nigeria, Ethiopia, Malawi, Sierra Leone, Liberia, Congo, and Burundi, only need to pay $100. An invoice link will be sent after registration.
+    </p>
 
+    <div className="flex justify-center gap-6">
+      <div className="bg-white border-2  p-8 rounded-xl shadow-lg max-w-xs w-full transform transition-all hover:scale-105">
+        <a 
+          className="block bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
+          href="https://payments.cashfree.com/forms/Indianlifetimemember"
+        >
+          ₹2000 for India
+        </a>
+      </div>
+      
+      <div className="bg-white border-2 p-8 rounded-xl shadow-lg max-w-xs w-full transform transition-all hover:scale-105">
+        <a 
+          className="block bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
+          href="https://paypal.me/mttf2020?country.x=IN&locale.x=en_GB"
+        >
+          $200 for International
+        </a>
+      </div>
+    </div>
 
-                    <p className="text-gray-600 mb-8">
-                        New Members, who registered on 1/1/2022 onwards have to pay their membership fee within the current month after registration. After fee confirmation, a membership certificate will be sent through a registered email address. The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. Interested candidates from most underdeveloped countries i.e. ERITREA, GUINEA, MADAGASCAR, NIGERIA, ETHIOPIA, MALAWI, SIERRA LEONE, LIBERIA, CONGO, BURUNDI need to pay only 100 USD. An invoice link will be sent after registration.
-                    </p>
+  </div>
+</section>
 
-
-                    <div className="flex justify-center gap-8">
-                        <a className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href='https://payments.cashfree.com/forms/Indianlifetimemember'>
-                            ₹2000 for India
-                        </a>
-                        <a className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href='https://paypal.me/mttf2020?country.x=IN&locale.x=en_GB'>
-                            $ 200 for International
-                        </a>
-                    </div>
-                </div>
-            </section>
             <FAQ faqs={faqs} />
         </>
     )

@@ -8,39 +8,38 @@ import img4 from '../../../../../public/assets/2024IEARG/IMG4.jpg';
 import img5 from '../../../../../public/assets/2024IEARG/IMG5.jpg';
 import Header from '@/components/Header/Header';
 
-
-  function Award2024 () {
-
-  
-  
+function Award2024() {
   return (
     <>
-      
-        <Header
-          title="IEARG Award 2024"
-          description="The International EARG Awards 2024, organized by MTTF with Poornima Engineering College, Jaipur, was held on March 19 in Fazilka, India. Awards were given in nine categories, including Lifetime Achievement, Academic Leadership, Research & Development, Innovation, and Young Entrepreneur."
-        />
-     
+      <Header
+        title="IEARG Award 2024"
+        description="The International EARG Awards 2024, organized by MTTF with Poornima Engineering College, Jaipur, was held on March 19 in Fazilka, India. Awards were given in nine categories, including Lifetime Achievement, Academic Leadership, Research & Development, Innovation, and Young Entrepreneur."
+      />
 
-      <section className="px-6 py-10 bg-gray-100">
+      <section className="px-6 py-16 bg-gradient-to-r from-blue-50 to-blue-200">
+        {/* Award Image */}
         <div className="p-12">
-          <Image src={award2024} alt="Award2024" className="shadow-md mb-5" />
+          <Image src={award2024} alt="Award2024" className="shadow-xl rounded-xl transform hover:scale-105 transition-all duration-300" />
         </div>
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Gallery</h2>
+
+        {/* Gallery Heading */}
+        <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">
+          Gallery
+        </h2>
 
         {/* Images Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-
-          <Image src={img2} alt="Image 2" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
-          <Image src={img3} alt="Image 3" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
-          <Image src={img4} alt="Image 4" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
-          <Image src={img5} alt="Image 5" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
-          <Image src={img1} alt="Image 1" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <Image src={img2} alt="Image 2" className="w-full h-64 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300" />
+          <Image src={img3} alt="Image 3" className="w-full h-64 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300" />
+          <Image src={img4} alt="Image 4" className="w-full h-64 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300" />
+          <Image src={img5} alt="Image 5" className="w-full h-64 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300" />
+          <Image src={img1} alt="Image 1" className="w-full h-64 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex justify-center items-center mt-6">
+        {/* Videos Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Video 1 */}
+          <div className="flex justify-center items-center rounded-xl shadow-xl bg-white p-4">
             <iframe
               width="560"
               height="315"
@@ -49,9 +48,12 @@ import Header from '@/components/Header/Header';
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="rounded-lg"
             ></iframe>
           </div>
-          <div className="flex justify-center items-center mt-6">
+
+          {/* Video 2 */}
+          <div className="flex justify-center items-center rounded-xl shadow-xl bg-white p-4">
             <iframe
               width="560"
               height="315"
@@ -60,10 +62,10 @@ import Header from '@/components/Header/Header';
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="rounded-lg"
             ></iframe>
           </div>
         </div>
-
       </section>
     </>
   );

@@ -85,14 +85,14 @@ function BioinformaticsPage() {
 
 
             <div className="bg-gradient-to-b from-blue-50 via-white to-gray-100 text-gray-800 min-h-screen py-12">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className=" w-full mx-auto">
 
                     {/* Why Learn Bioinformatics Section */}
 
                     <section className="relative py-16 bg-gradient-to-br from-blue-50 to-gray-100 flex justify-center items-center">
-                        <div className="max-w-6xl mx-auto px-6">
+                        <div className="w-full mx-auto px-6">
 
-                            <section className="text-center py-12 bg-gradient-to-b from-blue-100 to-blue-50">
+                            <section className="text-center  bg-gradient-to-b from-blue-100 to-blue-50">
                                 <h2 className="text-5xl font-extrabold text-gradient bg-clip-text text-transparent mb-6">
                                     Why Learn Bioinformatics?
                                 </h2>

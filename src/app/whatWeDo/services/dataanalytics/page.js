@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header";
 import dataanalysis2 from "../../../../../public/assets/dataanalysis2.png"
 import Image from 'next/image';
 
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaRocket } from "react-icons/fa";
 
 
 
@@ -69,9 +69,9 @@ function DataAnalyticsConsultancy() {
                 </div>
             </div>
 
-            <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16">
+            <section className="py-16">
                 <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-                    <h3 className="text-4xl font-bold text-center text-white mb-12">
+                    <h3 className="text-4xl font-extrabold text-center text-indigo-800 mb-12">
                         🚀 Our Consultancy Services
                     </h3>
                     <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
@@ -84,40 +84,59 @@ function DataAnalyticsConsultancy() {
 
 
 
-            <section className="relative py-16 bg-gradient-to-r from-blue-50 to-gray-100 flex justify-center items-center">
-                <div className="max-w-5xl mx-auto px-6 text-center">
+
+            <section className="relative py-16 bg-gradient-to-br from-indigo-50 to-indigo-100 flex justify-center items-center">
+                <div className="max-w-6xl mx-auto px-6 text-center">
                     {/* Heading */}
-                    <h3 className="text-4xl font-bold text-gray-800 mb-4">
+                    <h3 className="text-5xl font-extrabold text-gradient bg-clip-text text-transparent mb-8"
+                        style={{ fontFamily: '"Poppins", sans-serif', backgroundImage: 'linear-gradient(to right, #6EE7B7, #3B82F6)' }}>
                         Why Choose Us?
                     </h3>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                        We blend expertise with innovation, guiding businesses through every stage of their journey.
-                        Our strategies and analytics ensure maximum growth and efficiency.
+                    <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12" style={{ fontFamily: '"Merriweather", serif' }}>
+                        We combine cutting-edge technology with proven expertise to craft solutions that fuel growth and innovation.
+                        Our unique strategies deliver measurable results with a clear path to business success.
                     </p>
 
-                    {/* Features Grid */}
-                    <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {/* Features Grid with Icons */}
+                    <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {[
-                            { title: "Expert Insights", desc: "Our professionals analyze and craft solutions that drive success." },
-                            { title: "Innovative Strategies", desc: "We leverage modern technology to maximize business potential." },
-                            { title: "Proven Results", desc: "Our track record speaks for itself, ensuring quality at every step." }
+                            {
+                                title: "Expert Insights",
+                                desc: "In-depth analysis that provides clarity and drives smarter decisions.",
+                                icon: <FaLightbulb className="text-6xl text-indigo-500 mb-4" />
+                            },
+                            {
+                                title: "Innovative Strategies",
+                                desc: "Utilizing the latest tools and technologies to foster growth and efficiency.",
+                                icon: <FaRocket className="text-6xl text-teal-500 mb-4" />
+                            },
+                            {
+                                title: "Proven Results",
+                                desc: "A history of successful implementations that deliver tangible value.",
+                                icon: <FaChartLine className="text-6xl text-yellow-500 mb-4" />
+                            }
                         ].map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                className="bg-white shadow-xl rounded-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                style={{
+                                    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)',
+                                }}
                             >
-                                <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
-                                <p className="text-gray-600 mt-3">{item.desc}</p>
+                                <div className="flex justify-center mb-4">{item.icon}</div>
+                                <h4 className="text-2xl font-semibold text-gray-900 mb-4" style={{ fontFamily: '"Lora", serif' }}>
+                                    {item.title}
+                                </h4>
+                                <p className="text-gray-600">{item.desc}</p>
                             </div>
                         ))}
                     </div>
 
                     {/* CTA Button */}
-                    <div className="mt-10 flex justify-center">
+                    <div className="mt-12 flex justify-center">
                         <a
                             href="/about"
-                            className="flex items-center gap-2 px-6 py-3 text-lg font-medium text-white 
-                bg-blue-600 rounded-full shadow-lg transition-all duration-300 hover:bg-blue-500 hover:scale-105"
+                            className="flex items-center gap-4 px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-indigo-600 to-teal-600 rounded-full shadow-lg transition-all duration-300 hover:from-indigo-700 hover:to-teal-700 hover:scale-105"
                         >
                             Learn More <FaArrowRight />
                         </a>
@@ -126,40 +145,56 @@ function DataAnalyticsConsultancy() {
             </section>
 
 
+
+
         </>
     );
 }
+
 function ServiceCard({ title, description, index }) {
     const icons = [
-        <FaChartLine />, <FaBrain />, <FaChartBar />, <FaSearch />,
-        <FaShieldAlt />, <FaRobot />, <FaBolt />, <FaLightbulb />,
-        <FaTruck />, <FaLink />
+        <FaChartLine className="text-blue-400" />,
+        <FaBrain className="text-green-400" />,
+        <FaChartBar className="text-purple-400" />,
+        <FaSearch className="text-yellow-400" />,
+        <FaShieldAlt className="text-pink-400" />,
+        <FaRobot className="text-teal-400" />,
+        <FaBolt className="text-orange-400" />,
+        <FaLightbulb className="text-indigo-400" />,
+        <FaTruck className="text-red-400" />,
+        <FaLink className="text-lime-400" />
     ];
 
     return (
-        <div className="relative group flex flex-col items-center text-center w-full max-w-xs p-8 rounded-xl shadow-lg transition-all duration-500 transform hover:scale-105"
+        <div className="relative group flex flex-col items-center text-center w-full max-w-xs p-8 rounded-xl shadow-xl transition-all duration-500 transform hover:scale-105 hover:rotate-3 hover:shadow-2xl"
             style={{
-                background: "rgba(255, 255, 255, 0.1)",
-                backdropFilter: "blur(10px)",
-                border: "1px solid rgba(255, 255, 255, 0.2)",
-                boxShadow: "0 10px 30px rgba(255, 255, 255, 0.1)"
+                background: "linear-gradient(145deg, #ffffff, #f9f9f9)", // Soft, off-white background for the card
+                border: "2px solid #e2e2e2", // Subtle border for definition
+                boxShadow: "0 20px 50px rgba(0, 0, 0, 0.05)" // Deep shadow for depth
             }}>
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-all rounded-xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-400 via-red-500 to-yellow-500 opacity-0 group-hover:opacity-30 transition-all rounded-xl"></div>
 
-            {/* Icon */}
-            <div className="text-5xl mb-4 text-white group-hover:text-blue-400 transition-all">
+            {/* Icon with vibrant color */}
+            <div className="text-6xl mb-4 text-gray-800 group-hover:text-white transition-all ease-in-out duration-300">
                 {icons[index % icons.length]}
             </div>
 
-            {/* Title */}
-            <h3 className="text-2xl font-semibold text-white">{title}</h3>
+            {/* Title with new font */}
+            <h3 className="text-3xl font-extrabold text-gray-800 mb-2" style={{ fontFamily: '"Poppins", sans-serif' }}>
+                {title}
+            </h3>
 
-            {/* Description */}
-            <p className="mt-4 text-gray-300">{description}</p>
+            {/* Description with subtle text effect */}
+            <p className="mt-4 text-gray-600" style={{ fontFamily: '"Roboto", sans-serif' }}>
+                {description}
+            </p>
         </div>
     );
 }
+
+
+
 
 export default DataAnalyticsConsultancy;
 
