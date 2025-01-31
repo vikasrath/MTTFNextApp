@@ -21,38 +21,38 @@ const BusinessIntelligence = () => {
                 description="Empowering businesses to unlock their full potential with Business Intelligence"
             />
 
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 p-6 sm:p-12">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 md:p-6">
                 <div className="max-w-7xl mx-auto">
 
 
-                <section className="mb-16 bg-gradient-to-br from-blue-50 to-white p-12 rounded-3xl shadow-xl transform hover:scale-105 transition-all">
-    <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-        What is Business Intelligence in Education?
-    </h2>
-    <p className="text-gray-700 leading-relaxed text-lg text-center max-w-3xl mx-auto mb-8">
-        Business Intelligence refers to the process of collecting, analyzing, and visualizing data to derive actionable insights. In the context of education, BI enables institutions to:
-    </p>
-    <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        {[ 
-            { text: "Monitor academic performance.", icon: "📊" },
-            { text: "Optimize resource allocation.", icon: "📈" },
-            { text: "Enhance curriculum design.", icon: "📘" },
-            { text: "Personalize learning experiences.", icon: "🎓" },
-            { text: "Improve administrative efficiency.", icon: "⚙️" }
-        ].map((item, index) => (
-            <li key={index} className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
-                <div className="bg-gradient-to-r from-blue-300 to-blue-600 p-3 rounded-full">
-                    <span className="text-3xl text-white">{item.icon}</span>
-                </div>
-                <span className="text-gray-700 text-lg">{item.text}</span>
-            </li>
-        ))}
-    </ul>
-</section>
+                    <section className="mb-16 bg-gradient-to-br from-blue-50 to-white p-6 lg:p-12 rounded-3xl shadow-xl transform hover:scale-105 transition-all">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+                            What is Business Intelligence in Education?
+                        </h2>
+                        <p className="text-gray-700 leading-relaxed text-lg text-center max-w-3xl mx-auto mb-8">
+                            Business Intelligence refers to the process of collecting, analyzing, and visualizing data to derive actionable insights. In the context of education, BI enables institutions to:
+                        </p>
+                        <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                            {[
+                                { text: "Monitor academic performance.", icon: "📊" },
+                                { text: "Optimize resource allocation.", icon: "📈" },
+                                { text: "Enhance curriculum design.", icon: "📘" },
+                                { text: "Personalize learning experiences.", icon: "🎓" },
+                                { text: "Improve administrative efficiency.", icon: "⚙️" }
+                            ].map((item, index) => (
+                                <li key={index} className="flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
+                                    <div className="bg-gradient-to-r from-blue-300 to-blue-600 p-3 rounded-full">
+                                        <span className="text-3xl text-white">{item.icon}</span>
+                                    </div>
+                                    <span className="text-gray-700 text-lg">{item.text}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
 
 
 
-                    <section className="mb-16">
+                    <section className="mb-16 p-6 ">
                         <h2 className="text-4xl font-bold text-gray-800 mb-8">
                             Our BI Features and Capabilities
                         </h2>
@@ -82,7 +82,7 @@ const BusinessIntelligence = () => {
 
 
 
-                    <section className="mb-16 bg-gradient-to-br from-blue-100 to-white p-10 rounded-2xl shadow-xl">
+                    <section className="mb-16 bg-gradient-to-br from-blue-100 to-white p-6 lg:p-10 rounded-2xl shadow-xl">
                         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
                             How We Transform Education with BI
                         </h2>
@@ -90,7 +90,7 @@ const BusinessIntelligence = () => {
                             {educationData.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-200"
+                                    className="flex items-center gap-4 bg-white p-3 lg:p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-200"
                                 >
                                     <div className="p-3 bg-gray-100 rounded-full">
                                         {item.icon}
@@ -106,7 +106,7 @@ const BusinessIntelligence = () => {
 
 
 
-                    <section className="mb-16 p-10 bg-gradient-to-br from-indigo-50 to-white rounded-2xl shadow-lg">
+                    <section className="mb-16 p-6 lg:p-10 bg-gradient-to-br from-indigo-50 to-white rounded-2xl shadow-lg">
                         <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
                             Why Choose Our BI Solutions?
                         </h2>
@@ -132,7 +132,7 @@ const BusinessIntelligence = () => {
                     </section>
 
 
-                    <section className="mb-16">
+                    <section className="mb-16 p-4 lg:p-0">
                         <h2 className="text-4xl font-bold text-gray-800 mb-8">Success Stories</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {[

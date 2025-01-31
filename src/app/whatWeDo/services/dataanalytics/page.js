@@ -3,7 +3,14 @@ import Header from "@/components/Header/Header";
 import dataanalysis2 from "../../../../../public/assets/dataanalysis2.png"
 import Image from 'next/image';
 
+import { FaArrowRight } from "react-icons/fa";
+
+
+
+import { FaChartLine, FaBrain, FaChartBar, FaSearch, FaShieldAlt, FaRobot, FaBolt, FaLightbulb, FaTruck, FaLink } from 'react-icons/fa';
+
 function DataAnalyticsConsultancy() {
+
     const services = [
         { title: "Data Strategy Development", description: "Develop a clear data strategy aligned with business goals to drive informed decision-making." },
         { title: "Data Collection and Integration", description: "Streamline data from multiple sources to ensure data quality and accessibility." },
@@ -17,14 +24,16 @@ function DataAnalyticsConsultancy() {
         { title: "Operational Efficiency", description: "Enhance efficiency across processes by identifying and addressing bottlenecks." }
     ];
 
+
+
     return (
         <>
-            
+
             <Header
                 title="Data Analytics Consultancy Services"
                 description="Empowering businesses to unlock their full potential with data-driven strategies, analysis, and insights."
             />
-            
+
             <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
                     <div className="text-left">
@@ -53,49 +62,109 @@ function DataAnalyticsConsultancy() {
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
                     <div className="relative w-full p-3 rounded md:p-8">
                         <div className="rounded-lg bg-white text-black w-full p-6">
-                            <Image src={dataanalysis2} alt="Data Analytics Consultancy" className="rounded-md" height ={300}
-                            width= {300} />
+                            <Image src={dataanalysis2} alt="Data Analytics Consultancy" className="rounded-md" height={300}
+                                width={300} />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <section className="bg-gray-100 py-12">
+            <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16">
                 <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-                    <h3 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Consultancy Services</h3>
-                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+                    <h3 className="text-4xl font-bold text-center text-white mb-12">
+                        🚀 Our Consultancy Services
+                    </h3>
+                    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
                         {services.map((service, index) => (
-                            <ServiceCard key={index} title={service.title} description={service.description} />
+                            <ServiceCard key={index} title={service.title} description={service.description} index={index} />
                         ))}
                     </div>
                 </div>
             </section>
 
-            <section className="py-12">
-                <div className="max-w-screen-lg mx-auto px-6">
-                    <h3 className="text-3xl font-semibold text-center text-gray-800 mb-8">Why Choose Us?</h3>
-                    <p className="text-lg text-gray-600 text-center">
-                        Our expertise, industry knowledge, and commitment to results help businesses uncover new opportunities and drive performance. We support organizations through every stage of their data journey, from strategy development to advanced analytics.
+
+
+            <section className="relative py-16 bg-gradient-to-r from-blue-50 to-gray-100 flex justify-center items-center">
+                <div className="max-w-5xl mx-auto px-6 text-center">
+                    {/* Heading */}
+                    <h3 className="text-4xl font-bold text-gray-800 mb-4">
+                        Why Choose Us?
+                    </h3>
+                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                        We blend expertise with innovation, guiding businesses through every stage of their journey.
+                        Our strategies and analytics ensure maximum growth and efficiency.
                     </p>
-                    <div className="mt-8 text-center">
-                        <a href="/about" className="text-blue-500 hover:text-blue-700 underline">
-                            Learn More About Our Approach
+
+                    {/* Features Grid */}
+                    <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {[
+                            { title: "Expert Insights", desc: "Our professionals analyze and craft solutions that drive success." },
+                            { title: "Innovative Strategies", desc: "We leverage modern technology to maximize business potential." },
+                            { title: "Proven Results", desc: "Our track record speaks for itself, ensuring quality at every step." }
+                        ].map((item, index) => (
+                            <div
+                                key={index}
+                                className="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                            >
+                                <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
+                                <p className="text-gray-600 mt-3">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* CTA Button */}
+                    <div className="mt-10 flex justify-center">
+                        <a
+                            href="/about"
+                            className="flex items-center gap-2 px-6 py-3 text-lg font-medium text-white 
+                bg-blue-600 rounded-full shadow-lg transition-all duration-300 hover:bg-blue-500 hover:scale-105"
+                        >
+                            Learn More <FaArrowRight />
                         </a>
                     </div>
                 </div>
             </section>
 
+
         </>
     );
 }
+function ServiceCard({ title, description, index }) {
+    const icons = [
+        <FaChartLine />, <FaBrain />, <FaChartBar />, <FaSearch />,
+        <FaShieldAlt />, <FaRobot />, <FaBolt />, <FaLightbulb />,
+        <FaTruck />, <FaLink />
+    ];
 
-function ServiceCard({ title, description }) {
     return (
-        <div className="flex flex-col items-center text-center w-full max-w-xs p-6 bg-white rounded-lg shadow-md transform transition-transform hover:scale-105">
-            <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-            <p className="mt-4 text-gray-600">{description}</p>
+        <div className="relative group flex flex-col items-center text-center w-full max-w-xs p-8 rounded-xl shadow-lg transition-all duration-500 transform hover:scale-105"
+            style={{
+                background: "rgba(255, 255, 255, 0.1)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255, 255, 255, 0.2)",
+                boxShadow: "0 10px 30px rgba(255, 255, 255, 0.1)"
+            }}>
+            {/* Glow effect on hover */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-all rounded-xl"></div>
+
+            {/* Icon */}
+            <div className="text-5xl mb-4 text-white group-hover:text-blue-400 transition-all">
+                {icons[index % icons.length]}
+            </div>
+
+            {/* Title */}
+            <h3 className="text-2xl font-semibold text-white">{title}</h3>
+
+            {/* Description */}
+            <p className="mt-4 text-gray-300">{description}</p>
         </div>
     );
 }
 
 export default DataAnalyticsConsultancy;
+
+
+
+
+
+
