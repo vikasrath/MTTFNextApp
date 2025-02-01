@@ -84,7 +84,7 @@ const Navbar = () => {
                     <div className="lg:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="text-white text-2xl focus:outline-none"
+                            className="text-white text-2xl focus:outline-hidden"
                         >
                             {isMenuOpen ? <FaTimes /> : <FaBars />}
                         </button>

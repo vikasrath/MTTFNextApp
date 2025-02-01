@@ -48,7 +48,7 @@ function Partners() {
 
     return (
         <>
-            <div className='bg-gradient-to-r from-blue-50 via-white to-indigo-100 w-full '>
+            <div className='bg-linear-to-r from-blue-50 via-white to-indigo-100 w-full '>
 
                 <div className=''>
                     <h1 className="font-serif text-2xl lg:text-4xl mb-12 text-gray-700 text-center  pt-8">Our  Partners</h1>
@@ -61,7 +61,7 @@ function Partners() {
                             {partnerImages.map((image, index) => (
                                 <div
                                     key={index}
-                                    className="flex justify-center items-center border-2 border-gray-200 p-4 rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow"
+                                    className="flex justify-center items-center border-2 border-gray-200 p-4 rounded-lg shadow-xs bg-white hover:shadow-md transition-shadow"
                                 >
                                     <Image
                                         src={image}

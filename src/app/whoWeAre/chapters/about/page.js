@@ -41,7 +41,7 @@ function AboutChepter() {
           </p>
           <p className="text-gray-700 text-md md:text-lg font-semibold">Science, Technology, Engineering, & Mathematics</p>
           <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'>
-            <button className="mt-8 px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-2 transform transition-transform duration-300 hover:scale-105">
+            <button className="mt-8 px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-hidden focus:ring-4 focus:ring-blue-500 focus:ring-offset-2 transform transition-transform duration-300 hover:scale-105">
               Contact Us
             </button>
           </a>
@@ -50,7 +50,7 @@ function AboutChepter() {
 
 
 
-      <section className="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 py-16 px-5 md:px-20 lg:px-40">
+      <section className="bg-linear-to-r from-blue-50 via-blue-100 to-blue-50 py-16 px-5 md:px-20 lg:px-40">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* <!-- Text Content --> */}
           <div>
@@ -70,7 +70,7 @@ function AboutChepter() {
               <a href="mailto:contactus@mttf.in" className="text-blue-600 underline hover:text-blue-800">contactus@mttf.in</a>
             </p>
             <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'>
-              <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2">
+              <button className="px-8 py-3 bg-linear-to-r from-blue-600 to-blue-800 text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-hidden focus:ring-4 focus:ring-blue-300 focus:ring-offset-2">
                 Contact Us
               </button>
             </a>
@@ -83,7 +83,7 @@ function AboutChepter() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r bg-white py-16 px-5 md:px-20 lg:px-40">
+      <section className="bg-linear-to-r bg-white py-16 px-5 md:px-20 lg:px-40">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* <!-- Image --> */}

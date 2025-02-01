@@ -8,8 +8,8 @@ function Footer() {
     <footer className="bg-gray-900 text-gray-300 py-16 relative">
       {/* Decorative Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-br from-blue-700 to-indigo-900 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-gradient-to-br from-cyan-700 to-teal-900 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-linear-to-br from-blue-700 to-indigo-900 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-linear-to-br from-cyan-700 to-teal-900 rounded-full opacity-20 blur-3xl"></div>
       </div>
 
       <div className="relative container mx-auto px-6 md:px-12 lg:px-24">

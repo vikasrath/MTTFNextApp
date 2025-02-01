@@ -8,13 +8,13 @@ function Header({ title, description, isHome = false }) {
       {isHome ? (
         <HomeHeader />
       ) : (
-        <div className="relative bg-gradient-to-br from-gray-900 via-gray-900 to-gray-700 text-white min-h-[80vh] flex items-center justify-center px-6">
+        <div className="relative bg-linear-to-br from-gray-900 via-gray-900 to-gray-700 text-white min-h-[80vh] flex items-center justify-center px-6">
           {/* Background Patterns */}
           <div className="absolute inset-0">
            
           </div>
          
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-tr from-cyan-500 to-teal-500 rounded-full blur-3xl opacity-40"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-linear-to-tr from-cyan-500 to-teal-500 rounded-full blur-3xl opacity-40"></div>
 
           {/* Content */}
           <div className="relative z-10 text-center max-w-4xl mt-12">
@@ -37,9 +37,9 @@ function Header({ title, description, isHome = false }) {
 
           {/* Bottom Floating Elements */}
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] flex justify-between items-center px-6">
-            <div className="w-20 h-20 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 rounded-full blur-2xl opacity-50"></div>
-            <div className="w-14 h-14 bg-gradient-to-br from-cyan-400 via-teal-400 to-green-400 rounded-full blur-2xl opacity-50"></div>
-            <div className="w-10 h-10 bg-gradient-to-br from-pink-500 via-red-500 to-orange-500 rounded-full blur-2xl opacity-50"></div>
+            <div className="w-20 h-20 bg-linear-to-br from-blue-500 via-purple-500 to-indigo-500 rounded-full blur-2xl opacity-50"></div>
+            <div className="w-14 h-14 bg-linear-to-br from-cyan-400 via-teal-400 to-green-400 rounded-full blur-2xl opacity-50"></div>
+            <div className="w-10 h-10 bg-linear-to-br from-pink-500 via-red-500 to-orange-500 rounded-full blur-2xl opacity-50"></div>
           </div>
         </div>
       )}

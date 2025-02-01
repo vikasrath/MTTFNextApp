@@ -29,7 +29,7 @@ function StudentChepter() {
         />
 
 
-      <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
+      <section className="bg-linear-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
         <div className="w-full mx-auto ">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6 pb-4 border-blue-700 border-b-4">Advantages of STEM Student Chapters for Professionals</h2>
@@ -40,7 +40,7 @@ function StudentChepter() {
         </div>
       </section>
       
-      <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
+      <section className="bg-linear-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
         <div className="w-full mx-auto text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6 pb-4 border-blue-700 border-b-4 inline-block">Established Chapters</h2>
           <div className="bg-white rounded-lg shadow-lg p-6 mt-6">

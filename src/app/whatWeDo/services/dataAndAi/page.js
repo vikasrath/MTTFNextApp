@@ -55,9 +55,9 @@ const DataAndAiPage = () => {
             />
 
             <div className="bg-gray-50 text-gray-800 p-6 md:p-12">
-                <section className="relative text-center mb-16 px-6 py-12 bg-gradient-to-br from-indigo-900 to-indigo-700 text-white rounded-xl shadow-lg overflow-hidden">
+                <section className="relative text-center mb-16 px-6 py-12 bg-linear-to-br from-indigo-900 to-indigo-700 text-white rounded-xl shadow-lg overflow-hidden">
                     {/* Floating Sparkles for a Futuristic Look */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-20 pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent opacity-20 pointer-events-none"></div>
 
                     <div className="max-w-3xl mx-auto relative z-10">
                         {/* Title with Icons */}
@@ -127,7 +127,7 @@ const DataAndAiPage = () => {
                 {/* Learning Paths Section */}
 
 
-                <section className="bg-gradient-to-r from-indigo-600 to-purple-700 p-8 rounded-xl shadow-lg mb-16">
+                <section className="bg-linear-to-r from-indigo-600 to-purple-700 p-8 rounded-xl shadow-lg mb-16">
                     <h2 className="text-4xl font-extrabold text-white mb-8 text-center">
                         Personalized Learning Paths
                     </h2>
@@ -164,7 +164,7 @@ const DataAndAiPage = () => {
 
 
                 {/* Career Guidance Section */}
-                <section className="mb-16 bg-gradient-to-br from-purple-50 to-blue-100 py-16 px-6">
+                <section className="mb-16 bg-linear-to-br from-purple-50 to-blue-100 py-16 px-6">
                     <h2 className="text-4xl font-bold text-indigo-900 text-center mb-12 drop-shadow-lg">
                         🚀 Career Guidance
                     </h2>
@@ -186,7 +186,7 @@ const DataAndAiPage = () => {
 
 
                 {/* Key Features Section */}
-               <section className="bg-gradient-to-br from-gray-100 to-gray-200 p-10 rounded-2xl shadow-xl max-w-5xl mx-auto mb-16">
+               <section className="bg-linear-to-br from-gray-100 to-gray-200 p-10 rounded-2xl shadow-xl max-w-5xl mx-auto mb-16">
       <h2 className="text-4xl font-bold text-indigo-900 mb-8 text-center drop-shadow-lg">
         🚀 Key Features of Our Platform
       </h2>
@@ -203,7 +203,7 @@ const DataAndAiPage = () => {
               
                  <div className="mb-16">
       {/* Upcoming Courses and Events */}
-      <section className="bg-gradient-to-br from-gray-100 to-gray-200 p-10 rounded-2xl shadow-xl max-w-5xl mx-auto">
+      <section className="bg-linear-to-br from-gray-100 to-gray-200 p-10 rounded-2xl shadow-xl max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-indigo-900 text-center mb-8 drop-shadow-lg">
           📅 Upcoming Courses & Events
         </h2>
@@ -218,7 +218,7 @@ const DataAndAiPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center mt-16 bg-gradient-to-r from-indigo-500 to-indigo-700 text-white py-12 px-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
+      <section className="text-center mt-16 bg-linear-to-r from-indigo-500 to-indigo-700 text-white py-12 px-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 drop-shadow-lg">🚀 Join Us Today</h2>
         <p className="text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
           Embark on your journey to mastering Artificial Intelligence! Whether you aim to build AI-powered applications, conduct research, or innovate in the tech world, <strong className="text-yellow-300">Math Tech Thinking Foundation</strong> is your trusted partner.

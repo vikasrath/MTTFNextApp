@@ -55,14 +55,14 @@ function IndividualMembership() {
 
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <div className="lg:grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <h1 className="title-font sm:text-4xl text-3xl mb-5 font-medium text-gray-900">Why should you join us?
                             <br className="hidden lg:inline-block" />
                         </h1>
                         <p className="mb-8 lg:text-xl   font-sans  font-medium leading-10  ">MTTF invites all professionals in Science, Technology, Engineering, and Mathematics to join our community. MTTF Societies encompass fields like engineering, mathematics, science, and computer science, organizing key events such as conferences, workshops, training, internships, and faculty development programs. These gatherings create valuable opportunities for networking, knowledge-sharing, and collaborative problem-solving. MTTF Society committee members also play an active role in planning and organizing activities, contributing to a vibrant professional community.</p>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img className="object-cover object-center rounded  shadow-[#00000062] shadow-xl" alt="hero" src="https://www.mttf.in/wp-content/uploads/2023/04/316000397_5653660711354580_5399085255215049303_n.jpg" />
+                        <img className="object-cover object-center rounded-sm  shadow-[#00000062] shadow-xl" alt="hero" src="https://www.mttf.in/wp-content/uploads/2023/04/316000397_5653660711354580_5399085255215049303_n.jpg" />
                     </div>
                 </div>
             </section>
@@ -78,7 +78,7 @@ function IndividualMembership() {
                 </div>
             </section>
 
-            <section className="bg-gradient-to-r 200 py-16 px-6 md:px-12">
+            <section className="bg-linear-to-r 200 py-16 px-6 md:px-12">
   <div className="max-w-4xl mx-auto text-center space-y-8">
     
     <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
@@ -94,7 +94,7 @@ function IndividualMembership() {
     <div className="flex justify-center gap-6">
       <div className="bg-white border-2  p-8 rounded-xl shadow-lg max-w-xs w-full transform transition-all hover:scale-105">
         <a 
-          className="block bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
+          className="block bg-linear-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
           href="https://payments.cashfree.com/forms/Indianlifetimemember"
         >
           ₹2000 for India
@@ -103,7 +103,7 @@ function IndividualMembership() {
       
       <div className="bg-white border-2 p-8 rounded-xl shadow-lg max-w-xs w-full transform transition-all hover:scale-105">
         <a 
-          className="block bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
+          className="block bg-linear-to-r from-indigo-600 to-blue-600 text-white text-xl py-3 rounded-lg shadow-md hover:shadow-xl transition-all"
           href="https://paypal.me/mttf2020?country.x=IN&locale.x=en_GB"
         >
           $200 for International

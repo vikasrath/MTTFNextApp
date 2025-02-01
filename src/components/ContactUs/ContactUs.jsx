@@ -71,7 +71,7 @@ function ContactUs() {
                                     type="text"
                                     id="name"
                                     placeholder=" "
-                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none border border-gray-300"
+                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-hidden border border-gray-300"
                                 />
                                 <label htmlFor="name" className="absolute text-gray-500 text-sm sm:text-base top-2 left-6 transition-all">
                                     Your Name
@@ -82,7 +82,7 @@ function ContactUs() {
                                     type="email"
                                     id="email"
                                     placeholder=" "
-                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none border border-gray-300"
+                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-hidden border border-gray-300"
                                 />
                                 <label htmlFor="email" className="absolute text-gray-500 text-sm sm:text-base top-2 left-6 transition-all">
                                     Your Email Address
@@ -93,7 +93,7 @@ function ContactUs() {
                                     id="message"
                                     placeholder=" "
                                     rows="5"
-                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none border border-gray-300"
+                                    className="w-full bg-white text-gray-900 py-3 sm:py-4 px-6 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-hidden border border-gray-300"
                                 ></textarea>
                                 <label htmlFor="message" className="absolute text-gray-500 text-sm sm:text-base top-2 left-6 transition-all">
                                     Your Message

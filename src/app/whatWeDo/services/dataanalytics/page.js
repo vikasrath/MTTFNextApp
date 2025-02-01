@@ -34,7 +34,7 @@ function DataAnalyticsConsultancy() {
                 description="Empowering businesses to unlock their full potential with data-driven strategies, analysis, and insights."
             />
 
-            <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
+            <div className="relative flex flex-col items-center max-w-(--breakpoint-xl) px-4 mx-auto md:flex-row sm:px-6 p-8">
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
                     <div className="text-left">
                         <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
@@ -44,15 +44,15 @@ function DataAnalyticsConsultancy() {
                             Our data analytics consultancy offers a suite of services to help organizations harness data for strategic growth and improved efficiency.
                         </p>
                         <div className="mt-5 sm:flex md:mt-8">
-                            <div className="rounded-md shadow">
+                            <div className="rounded-md shadow-sm">
                                 <a href="#"
-                                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
+                                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-hidden focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Get Started
                                 </a>
                             </div>
-                            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                            <div className="mt-3 rounded-md shadow-sm sm:mt-0 sm:ml-3">
                                 <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'
-                                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
+                                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-hidden focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Contact Us
                                 </a>
                             </div>
@@ -60,7 +60,7 @@ function DataAnalyticsConsultancy() {
                     </div>
                 </div>
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
-                    <div className="relative w-full p-3 rounded md:p-8">
+                    <div className="relative w-full p-3 rounded-sm md:p-8">
                         <div className="rounded-lg bg-white text-black w-full p-6">
                             <Image src={dataanalysis2} alt="Data Analytics Consultancy" className="rounded-md" height={300}
                                 width={300} />
@@ -70,7 +70,7 @@ function DataAnalyticsConsultancy() {
             </div>
 
             <section className="py-16">
-                <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
+                <div className="max-w-(--breakpoint-xl) mx-auto px-6 lg:px-8">
                     <h3 className="text-4xl font-extrabold text-center text-indigo-800 mb-12">
                         🚀 Our Consultancy Services
                     </h3>
@@ -85,7 +85,7 @@ function DataAnalyticsConsultancy() {
 
 
 
-            <section className="relative py-16 bg-gradient-to-br from-indigo-50 to-indigo-100 flex justify-center items-center">
+            <section className="relative py-16 bg-linear-to-br from-indigo-50 to-indigo-100 flex justify-center items-center">
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     {/* Heading */}
                     <h3 className="text-5xl font-extrabold text-gradient bg-clip-text text-transparent mb-8"
@@ -136,7 +136,7 @@ function DataAnalyticsConsultancy() {
                     <div className="mt-12 flex justify-center">
                         <a
                             href="/about"
-                            className="flex items-center gap-4 px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-indigo-600 to-teal-600 rounded-full shadow-lg transition-all duration-300 hover:from-indigo-700 hover:to-teal-700 hover:scale-105"
+                            className="flex items-center gap-4 px-8 py-4 text-lg font-medium text-white bg-linear-to-r from-indigo-600 to-teal-600 rounded-full shadow-lg transition-all duration-300 hover:from-indigo-700 hover:to-teal-700 hover:scale-105"
                         >
                             Learn More <FaArrowRight />
                         </a>
@@ -173,7 +173,7 @@ function ServiceCard({ title, description, index }) {
                 boxShadow: "0 20px 50px rgba(0, 0, 0, 0.05)" // Deep shadow for depth
             }}>
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-400 via-red-500 to-yellow-500 opacity-0 group-hover:opacity-30 transition-all rounded-xl"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-pink-400 via-red-500 to-yellow-500 opacity-0 group-hover:opacity-30 transition-all rounded-xl"></div>
 
             {/* Icon with vibrant color */}
             <div className="text-6xl mb-4 text-gray-800 group-hover:text-white transition-all ease-in-out duration-300">

@@ -47,7 +47,7 @@ function Signup() {
                             type="text"
                             placeholder="John Doe"
                             required
-                            className="w-full p-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
+                            className="w-full p-1 border border-gray-300 rounded-lg shadow-xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
                             onChange={handleChange("fullName")}
                         />
                     </div>
@@ -57,7 +57,7 @@ function Signup() {
                             type="tel"
                             placeholder="+1234567890"
                             required
-                            className="w-full p-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
+                            className="w-full p-1 border border-gray-300 rounded-lg shadow-xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
                             onChange={handleChange("phone")}
                         />
                     </div>
@@ -69,7 +69,7 @@ function Signup() {
                         type="email"
                         placeholder="example@email.com"
                         required
-                        className="w-full p-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
+                        className="w-full p-1 border border-gray-300 rounded-lg shadow-xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
                         onChange={handleChange("email")}
                     />
                 </div>
@@ -106,7 +106,7 @@ function Signup() {
                     <div className="mt-4">
                         <label className="block text-sm font-medium text-gray-700">Institution Size</label>
                         <select
-                            className="w-full p-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-2 text-sm border border-gray-300 rounded-lg focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                             value={formData.institutionalSize}
                             onChange={handleChange("institutionalSize")}
                         >
@@ -125,7 +125,7 @@ function Signup() {
                         required
                         value={formData.password}
                         onChange={handleChange("password")}
-                        className="w-full p-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
+                        className="w-full p-1 border border-gray-300 rounded-lg shadow-xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400"
                     />
                 </div>
 
@@ -137,7 +137,7 @@ function Signup() {
                         required
                         value={formData.confirmPassword}
                         onChange={handleConfirmPasswordChange}
-                        className={`w-full p-1 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400 ${
+                        className={`w-full p-1 border rounded-lg shadow-sm focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-gray-400 transition placeholder-gray-400 ${
                             passwordsMatch ? "border-gray-300" : "border-red-500"
                         }`}
                     />

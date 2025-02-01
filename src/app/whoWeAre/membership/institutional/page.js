@@ -91,7 +91,7 @@ function InstitutionalMembership() {
                 </div>
             </section>
 
-            <section className="bg-gradient-to-b from-blue-50 to-white p-10 px-4 md:px-10 lg:px-20 rounded-lg shadow-md mx-auto mt-12">
+            <section className="bg-linear-to-b from-blue-50 to-white p-10 px-4 md:px-10 lg:px-20 rounded-lg shadow-md mx-auto mt-12">
                 <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Institutional Membership Fee</h2>
                 <p className="text-gray-800 text-center mb-10  lg:mx-40 leading-relaxed">
                     The MathTech Thinking Foundation (MTTF) offers a tiered membership fee structure to accommodate institutions of varying sizes and needs. The membership fees are as follows:

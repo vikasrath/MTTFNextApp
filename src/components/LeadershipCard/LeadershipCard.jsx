@@ -8,7 +8,7 @@ export default function LeadershipCard({ leader }) {
                 <img
                     src={leader.img.src}
                     alt={leader.name}
-                    className="w-28 h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 mb-4 object-cover border-4 border-gray-200 rounded-lg shadow-sm"
+                    className="w-28 h-36 lg:w-36 lg:h-44 xl:w-40 xl:h-48 mb-4 object-cover border-4 border-gray-200 rounded-lg shadow-xs"
                 />
                 <div className="flex flex-col items-start justify-start ml-6 max-h-full">
                     <h3 className="text-lg md:text-xl xl:text-2xl font-semibold text-gray-800">{leader.name}</h3>

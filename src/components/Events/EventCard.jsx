@@ -5,7 +5,7 @@ const EventCard = ({ image, title, date, location }) => {
     <div className="max-w-sm mx-auto my-6 border">
       <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
         <img
-          className="h-52 rounded w-full object-cover mb-4"
+          className="h-52 rounded-sm w-full object-cover mb-4"
           src={image}
           alt={title}
         />

@@ -4,7 +4,7 @@ const FAQ = ({faqs}) => {
    
 
     return (
-        <section className="p-8 bg-gradient-to-r from-indigo-50 to-indigo-100 rounded-lg shadow-xl">
+        <section className="p-8 bg-linear-to-r from-indigo-50 to-indigo-100 rounded-lg shadow-xl">
         <div className="space-y-6 lg:w-[80%] mx-auto mt-8">
           <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
             Frequently Asked Questions

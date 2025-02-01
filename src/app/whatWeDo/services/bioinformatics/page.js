@@ -84,15 +84,15 @@ function BioinformaticsPage() {
             />
 
 
-            <div className="bg-gradient-to-b from-blue-50 via-white to-gray-100 text-gray-800 min-h-screen py-12">
+            <div className="bg-linear-to-b from-blue-50 via-white to-gray-100 text-gray-800 min-h-screen py-12">
                 <div className=" w-full mx-auto">
 
                     {/* Why Learn Bioinformatics Section */}
 
-                    <section className="relative py-16 bg-gradient-to-br from-blue-50 to-gray-100 flex justify-center items-center">
+                    <section className="relative py-16 bg-linear-to-br from-blue-50 to-gray-100 flex justify-center items-center">
                         <div className="w-full mx-auto px-6">
 
-                            <section className="text-center  bg-gradient-to-b from-blue-100 to-blue-50">
+                            <section className="text-center  bg-linear-to-b from-blue-100 to-blue-50">
                                 <h2 className="text-5xl font-extrabold text-gradient bg-clip-text text-transparent mb-6">
                                     Why Learn Bioinformatics?
                                 </h2>
@@ -104,7 +104,7 @@ function BioinformaticsPage() {
 
 
                             {/* What We Offer Section */}
-                            <div className="mt-12 bg-gradient-to-b from-blue-50 to-blue-100 py-16 px-6">
+                            <div className="mt-12 bg-linear-to-b from-blue-50 to-blue-100 py-16 px-6">
                                 <h2 className="text-5xl font-bold text-center text-blue-800 mb-12">
                                     What We Offer
                                 </h2>
@@ -133,7 +133,7 @@ function BioinformaticsPage() {
 
 
                     {/* Key Features Section */}
-                    <section className="mb-20 bg-gradient-to-b from-blue-50 to-blue-100 py-16 px-6">
+                    <section className="mb-20 bg-linear-to-b from-blue-50 to-blue-100 py-16 px-6">
                         <h2 className="text-5xl font-bold text-center text-blue-900 mb-12">
                             Key Features of Our Platform
                         </h2>
@@ -157,14 +157,14 @@ function BioinformaticsPage() {
                     </section>
 
                     {/* Join Us Section */}
-                    <section className="text-center bg-gradient-to-b from-blue-100 to-blue-50 py-16 px-6 rounded-lg">
+                    <section className="text-center bg-linear-to-b from-blue-100 to-blue-50 py-16 px-6 rounded-lg">
                         <h2 className="text-5xl font-bold text-blue-800 mb-6">
                             Join Us Today
                         </h2>
                         <p className="mb-8 text-xl text-gray-800 font-light max-w-2xl mx-auto">
                             Be part of the bioinformatics revolution! Enroll in our courses and start your journey to mastering the future of life sciences.
                         </p>
-                        <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-20 py-5 rounded-lg font-semibold shadow-xl hover:from-blue-700 hover:to-blue-500 transform hover:scale-105 transition-all">
+                        <button className="bg-linear-to-r from-blue-600 to-blue-400 text-white px-20 py-5 rounded-lg font-semibold shadow-xl hover:from-blue-700 hover:to-blue-500 transform hover:scale-105 transition-all">
                             Get Started Now
                         </button>
                     </section>

@@ -16,7 +16,7 @@ function Award2024() {
         description="The International EARG Awards 2024, organized by MTTF with Poornima Engineering College, Jaipur, was held on March 19 in Fazilka, India. Awards were given in nine categories, including Lifetime Achievement, Academic Leadership, Research & Development, Innovation, and Young Entrepreneur."
       />
 
-      <section className="px-6 py-16 bg-gradient-to-r from-blue-50 to-blue-200">
+      <section className="px-6 py-16 bg-linear-to-r from-blue-50 to-blue-200">
         {/* Award Image */}
         <div className="p-12">
           <Image src={award2024} alt="Award2024" className="shadow-xl rounded-xl transform hover:scale-105 transition-all duration-300" />

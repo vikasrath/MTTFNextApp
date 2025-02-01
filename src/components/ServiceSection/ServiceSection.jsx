@@ -60,7 +60,7 @@ function ServiceSection() {
 
 
 
-            <div className='bg-gradient-to-r  from-blue-50 via-white to-indigo-100 p-4 pb-24 w-full min-h-[400px] flex flex-wrap justify-center bg-[#f8f9fe] '>
+            <div className='bg-linear-to-r  from-blue-50 via-white to-indigo-100 p-4 pb-24 w-full min-h-[400px] flex flex-wrap justify-center bg-[#f8f9fe] '>
                 <h1 className=' font-serif  text-2xl text-center w-full lg:text-4xl mb-8 mt-11 font-semibold'>Our Services
                 </h1>
 
