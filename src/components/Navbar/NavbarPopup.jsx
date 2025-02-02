@@ -1,8 +1,11 @@
+"use client";
 import { FaTimes, FaLink } from 'react-icons/fa';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import AuthPage from '../login/Login';
 
 const NavbarPopup = ({ popupContent, closePopup, navItems }) => {
+  const [auth, setAuth] = useState(false);
   const selectedNavItems = navItems[popupContent];
   if (!selectedNavItems) return null;
 
@@ -19,9 +22,13 @@ const NavbarPopup = ({ popupContent, closePopup, navItems }) => {
     };
   }, [selectedNavItems]);
 
+  const handelAuth = () => {
+    setAuth(true);
+  }
+
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-70 z-40 transition-opacity duration-300">
-      <div className="flex justify-center items-end min-h-screen relative">
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-70 z-20 transition-opacity duration-300">
+      <div className={`flex justify-center items-end min-h-screen relative ${auth && "opacity-0"}`}>
         {/* Close Button with Hover Effect */}
 
         {/* Popup Content */}
@@ -41,6 +48,16 @@ const NavbarPopup = ({ popupContent, closePopup, navItems }) => {
               <h3 className="text-2xl font-semibold text-gray-700 mb-4">{section.heading}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.links.map((link, idx) => (
+                  link.linkName == "Login" ? <>
+                    <div className="text-lg font-medium text-gray-800 hover:text-blue-600 transition-all duration-200" onClick={handelAuth}>
+                    <div key={idx} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+                      <div className="flex items-center space-x-3">
+                        <FaLink className="text-gray-600 mr-4" />
+                        {link.linkName}
+                      </div>
+                    </div>
+                  </div>
+                  </> : <>
                   <Link href={link.path} className="text-lg font-medium text-gray-800 hover:text-blue-600 transition-all duration-200" onClick={closePopup}>
                     <div key={idx} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
                       <div className="flex items-center space-x-3">
@@ -49,12 +66,14 @@ const NavbarPopup = ({ popupContent, closePopup, navItems }) => {
                       </div>
                     </div>
                   </Link>
+                  </>
                 ))}
               </div>
             </div>
           ))}
         </div>
       </div>
+      {auth && <AuthPage setAuth={setAuth}/>}
     </div>
   );
 };

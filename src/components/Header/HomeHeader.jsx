@@ -12,7 +12,7 @@ function HomeHeader() {
         muted
         loop
       >
-        <source src={introVideo} type="video/mp4" />
+        <source src={"../../../public/assets/introMTTF.mp4"} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
